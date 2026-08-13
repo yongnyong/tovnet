@@ -1,0 +1,447 @@
+{"kind":"deck","id":"pr/k981ef","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"","type":"master"}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"DEFAULT"}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"TOVNET · SEG   PROJECT REVIEW","textShapes":5}
+{"kind":"shape","id":"sh/547294r6","slide":1,"name":"Shape 0","bbox":[931.2,-153.6,624,624]}
+{"kind":"shape","id":"sh/k3yl0zql","slide":1,"name":"Shape 1","bbox":[1036.8,-57.6,422.4,422.4]}
+{"kind":"shape","id":"sh/7qp4be9c","slide":1,"name":"Shape 2","bbox":[-153.6,480,460.8,460.8]}
+{"kind":"textbox","id":"sh/65g3298r","slide":1,"name":"Text 3","text":"TOVNET · SEG   PROJECT REVIEW","textPreview":"TOVNET · SEG   PROJECT REVIEW","textChars":29,"textLines":1,"bbox":[86.4,148.8,768,38.4]}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"name":"Text 4","text":"TOVNET-SEG","textPreview":"TOVNET-SEG","textChars":10,"textLines":1,"bbox":[81.6,192,960,124.8]}
+{"kind":"textbox","id":"sh/sryl4zqx","slide":1,"name":"Text 5","text":"CCTV 고해상도 영상 기반 실시간 수면 조류(녹조·적조) 세그멘테이션 시스템","textPreview":"CCTV 고해상도 영상 기반 실시간 수면 조류(녹조·적조) 세그멘테이션 시스템","textChars":43,"textLines":1,"bbox":[86.4,321.6,1008,57.6]}
+{"kind":"shape","id":"sh/fu94fe98","slide":1,"name":"Shape 6","bbox":[86.4,398.4,307.2,0]}
+{"kind":"textbox","id":"sh/utg3698n","slide":1,"name":"Text 7","text":"개발 기간   2026.05 ~ 2026.07  (Phase 0 – Phase 6)\n핵심 모델   OneFormer (Swin-Large, ≈236M params)\n최종 성능   Test mIoU 0.770  ·  평균 지연 646ms","textPreview":"개발 기간   2026.05 ~ 2026.07  (Phase 0 – Phase 6) | 핵심 모델   OneFormer (Swin-Large, ≈236M params) | 최종 성능   Test mIoU 0.770  ·  평균 지연 646ms","textChars":131,"textLines":3,"bbox":[86.4,432,768,124.8]}
+{"kind":"textbox","id":"sh/wn6dc7eh","slide":1,"name":"Text 8","text":"원개발  성균관대학교 연구진  ·  기술자료 정리·발표  양호용","textPreview":"원개발  성균관대학교 연구진  ·  기술자료 정리·발표  양호용","textChars":35,"textLines":1,"bbox":[86.4,628.8,576,38.4]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"[용어 설명]\nOneFormer: 세그멘테이션(픽셀 단위 분류) 전용이 아니라 여러 비전 과제를 하나의 구조로 처리하는 범용 Transformer 모델입니다. Swin-Large는 그 안에서 이미지를 읽어들이는 백본(뼈대) 이름이며, 약 236M(2억 3,600만) 개의 파라미터를 가진 중대형급 모델입니다 — 최신 초대형 모델(수십억 파라미터)보다는 작지만, 엣지 실시간 세그멘테이션에서는 상당히 무거운 축에 속합니다.\nTest mIoU 0.770 / 평균 지연 646ms: 각각 '정확도'와 '속도' 지표입니다. 정확도 계산 방식은 10번 슬라이드에서, 속도 개선 과정은 6번 슬라이드에서 자세히 다룹니다.\nPhase 0~6: 2026.05~07 동안 모델 구조를 3번 바꾸고(5번 슬라이드), 아키텍처를 리팩터링하고(11번 슬라이드), 실제 운영까지 간(13번 슬라이드) 전체 여정의 단계 구분입니다.\n"}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"PROJECT OVERVIEW","textShapes":22}
+{"kind":"textbox","id":"sh/9072xkry","slide":2,"name":"Text 0","text":"PROJECT OVERVIEW","textPreview":"PROJECT OVERVIEW","textChars":16,"textLines":1,"bbox":[57.6,40.32,768,30.72]}
+{"kind":"textbox","id":"sh/ozy1ofad","slide":2,"name":"Text 1","text":"프로젝트 개요","textPreview":"프로젝트 개요","textChars":7,"textLines":1,"bbox":[57.6,69.12,1132.8,76.8]}
+{"kind":"textbox","id":"sh/b29kza94","slide":2,"name":"Text 2","text":"CCTV 영상 속 수면 부유 조류를 픽셀 단위로 분리하여, 점유율 계산 → 임계치 초과 시 알람·증거 저장까지 이어지는 엔드투엔드 파이프라인","textPreview":"CCTV 영상 속 수면 부유 조류를 픽셀 단위로 분리하여, 점유율 계산 → 임계치 초과 시 알람·증거 저장까지 이어지는 엔드투엔드 파이프라인","textChars":78,"textLines":1,"bbox":[57.6,144,1132.8,52.8]}
+{"kind":"shape","id":"sh/a10jqpsj","slide":2,"name":"Shape 3","bbox":[57.6,225.6,370.56,297.6]}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"name":"Text 4","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[84.48,246.72,144,57.6]}
+{"kind":"shape","id":"sh/w3i1sfa9","slide":2,"name":"Shape 5","bbox":[84.48,316.8,8.64,8.64]}
+{"kind":"textbox","id":"sh/r65knqtk","slide":2,"name":"Text 6","text":"Full Resolution 단일 추론","textPreview":"Full Resolution 단일 추론","textChars":21,"textLines":1,"bbox":[84.48,336,316.8,72]}
+{"kind":"textbox","id":"sh/q5wjelsz","slide":2,"name":"Text 7","text":"타일링 오버헤드를 제거하고 1920×1088 전신 입력 → 단일 추론 → 결과 크롭 체계로 전환","textPreview":"타일링 오버헤드를 제거하고 1920×1088 전신 입력 → 단일 추론 → 결과 크롭 체계로 전환","textChars":53,"textLines":1,"bbox":[84.48,403.2,316.8,105.6]}
+{"kind":"shape","id":"sh/ove9o7yd","slide":2,"name":"Shape 8","bbox":[455.04,225.6,370.56,297.6]}
+{"kind":"textbox","id":"sh/9wnqhczy","slide":2,"name":"Text 9","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[481.92,246.72,144,57.6]}
+{"kind":"shape","id":"sh/mtwrmxg7","slide":2,"name":"Shape 10","bbox":[481.92,316.8,8.64,8.64]}
+{"kind":"textbox","id":"sh/nu58f2hs","slide":2,"name":"Text 11","text":"DB 모니터링 기반 동적 제어","textPreview":"DB 모니터링 기반 동적 제어","textChars":16,"textLines":1,"bbox":[481.92,336,316.8,72]}
+{"kind":"textbox","id":"sh/wjy9sry9","slide":2,"name":"Text 12","text":"정적 실행에서 벗어나, DB를 주기적으로 폴링해 CCTV 추가/삭제를 실시간 감지하는 서버 아키텍처","textPreview":"정적 실행에서 벗어나, DB를 주기적으로 폴링해 CCTV 추가/삭제를 실시간 감지하는 서버 아키텍처","textChars":55,"textLines":1,"bbox":[481.92,403.2,316.8,105.6]}
+{"kind":"shape","id":"sh/xk7qlczu","slide":2,"name":"Shape 13","bbox":[852.48,225.6,370.56,297.6]}
+{"kind":"textbox","id":"sh/ahwrqhgj","slide":2,"name":"Text 14","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[879.36,246.72,144,57.6]}
+{"kind":"shape","id":"sh/bip8jmho","slide":2,"name":"Shape 15","bbox":[879.36,316.8,8.64,8.64]}
+{"kind":"textbox","id":"sh/cnupgny5","slide":2,"name":"Text 16","text":"모듈형 계층 구조","textPreview":"모듈형 계층 구조","textChars":9,"textLines":1,"bbox":[879.36,336,316.8,72]}
+{"kind":"textbox","id":"sh/do3q9szq","slide":2,"name":"Text 17","text":"utils → events → inference/ingestion/output → core로 이어지는 단방향 의존성 규칙 확립","textPreview":"utils → events → inference/ingestion/output → core로 이어지는 단방향 의존성 규칙 확립","textChars":70,"textLines":1,"bbox":[879.36,403.2,316.8,105.6]}
+{"kind":"shape","id":"sh/t8byxkn2","slide":2,"name":"Shape 18","bbox":[57.6,552,1164.48,97.92]}
+{"kind":"textbox","id":"sh/s72xofmh","slide":2,"name":"Text 19","text":"GPU","textPreview":"GPU","textChars":3,"textLines":1,"bbox":[81.6,563.52,262.32,28.8]}
+{"kind":"textbox","id":"sh/76twva5c","slide":2,"name":"Text 20","text":"RTX A5000 · 24GB VRAM","textPreview":"RTX A5000 · 24GB VRAM","textChars":21,"textLines":1,"bbox":[81.6,591.36,257.52,48]}
+{"kind":"textbox","id":"sh/65kfmpor","slide":2,"name":"Text 21","text":"모델","textPreview":"모델","textChars":2,"textLines":1,"bbox":[372.72,563.52,262.32,28.8]}
+{"kind":"textbox","id":"sh/hcvy14ne","slide":2,"name":"Text 22","text":"OneFormer Swin-Large","textPreview":"OneFormer Swin-Large","textChars":20,"textLines":1,"bbox":[372.72,591.36,257.52,48]}
+{"kind":"shape","id":"sh/gbmxszmt","slide":2,"name":"Shape 23","bbox":[348.72,566.4,0,72]}
+{"kind":"textbox","id":"sh/fadgzu58","slide":2,"name":"Text 24","text":"플랫폼 DB","textPreview":"플랫폼 DB","textChars":6,"textLines":1,"bbox":[663.84,563.52,262.32,28.8]}
+{"kind":"textbox","id":"sh/u94fqp4n","slide":2,"name":"Text 25","text":"MySQL · 내부 플랫폼 DB","textPreview":"MySQL · 내부 플랫폼 DB","textChars":17,"textLines":1,"bbox":[663.84,591.36,257.52,48]}
+{"kind":"shape","id":"sh/p0vy54na","slide":2,"name":"Shape 26","bbox":[639.84,566.4,0,72]}
+{"kind":"textbox","id":"sh/4zmxwzmp","slide":2,"name":"Text 27","text":"네트워크","textPreview":"네트워크","textChars":4,"textLines":1,"bbox":[954.96,563.52,262.32,28.8]}
+{"kind":"textbox","id":"sh/mlgvq147","slide":2,"name":"Text 28","text":"WireGuard VPN 원격 서버","textPreview":"WireGuard VPN 원격 서버","textChars":19,"textLines":1,"bbox":[954.96,591.36,257.52,48]}
+{"kind":"shape","id":"sh/nmpcj6ls","slide":2,"name":"Shape 29","bbox":[930.96,566.4,0,72]}
+{"kind":"textbox","id":"sh/onydsbmd","slide":2,"name":"Text 30","text":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textPreview":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textChars":39,"textLines":1,"bbox":[48,687.36,768,28.8]}
+{"kind":"textbox","id":"sh/9o7ulg3y","slide":2,"name":"Text 31","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1190.4,687.36,48,28.8]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"[핵심 개념 풀이]\nFull Resolution 단일 추론: 원래는 큰 이미지를 여러 조각(타일)으로 잘라 각각 AI에 넣었는데, 이제는 이미지 전체를 통째로 한 번에 넣습니다. 이렇게 바꾼 이유와 효과는 6번 슬라이드에서 수치로 보여드립니다.\nDB 모니터링 기반 동적 제어: 예전에는 카메라를 추가/제거하려면 서버를 껐다 켜야 했다면, 지금은 DB(카메라 목록)를 30초마다 자동으로 확인해서 사람 개입 없이 반영합니다.\n모듈형 계층 구조: 코드를 역할별 폴더로 나누고, 한쪽에서 다른 쪽으로만 참조하도록 규칙을 정했습니다(양방향 참조 금지). 이렇게 하면 한 부분을 고칠 때 다른 부분이 덩달아 깨지는 사고를 줄일 수 있습니다 — 자세한 구조는 11번 슬라이드.\nWireGuard VPN: 원격 서버에 안전하게 접속하기 위한 암호화 터널입니다. 일반 인터넷 회선보다 보안 수준이 높습니다.\n"}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"SYSTEM ARCHITECTURE","textShapes":35}
+{"kind":"textbox","id":"sh/cza94vmx","slide":3,"name":"Text 0","text":"SYSTEM ARCHITECTURE","textPreview":"SYSTEM ARCHITECTURE","textChars":19,"textLines":1,"bbox":[57.6,40.32,768,30.72]}
+{"kind":"textbox","id":"sh/d0jax03i","slide":3,"name":"Text 1","text":"실시간 처리 파이프라인","textPreview":"실시간 처리 파이프라인","textChars":12,"textLines":1,"bbox":[57.6,69.12,1132.8,76.8]}
+{"kind":"textbox","id":"sh/298ryl4v","slide":3,"name":"Text 2","text":"RTSP 수집부터 알람·대시보드 송출까지, 5단계 파이프라인으로 구성된 프로덕션 시스템","textPreview":"RTSP 수집부터 알람·대시보드 송출까지, 5단계 파이프라인으로 구성된 프로덕션 시스템","textChars":48,"textLines":1,"bbox":[57.6,144,1132.8,38.4]}
+{"kind":"shape","id":"sh/3ah8rqlg","slide":3,"name":"Shape 3","bbox":[57.6,225.6,193.92,163.2]}
+{"kind":"shape","id":"sh/obq90bml","slide":3,"name":"Shape 4","bbox":[133.44,244.8,42.24,42.24]}
+{"kind":"textbox","id":"sh/pcjqtg36","slide":3,"name":"Text 5","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[133.44,244.8,42.24,42.24]}
+{"kind":"textbox","id":"sh/m5cra54z","slide":3,"name":"Text 6","text":"Ingestion","textPreview":"Ingestion","textChars":9,"textLines":1,"bbox":[69.12,297.6,170.88,33.6]}
+{"kind":"textbox","id":"sh/n6ls3alk","slide":3,"name":"Text 7","text":"RTSP 스트림 수집\nFFmpeg NVDEC 하드웨어 디코딩","textPreview":"RTSP 스트림 수집 | FFmpeg NVDEC 하드웨어 디코딩","textChars":33,"textLines":2,"bbox":[69.12,331.2,170.88,55.68]}
+{"kind":"textbox","id":"sh/n2l4fq98","slide":3,"name":"Text 8","text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[253.44,286.08,23.04,42.24]}
+{"kind":"shape","id":"sh/m1c3mlsn","slide":3,"name":"Shape 9","bbox":[278.4,225.6,193.92,163.2]}
+{"kind":"shape","id":"sh/943mhgre","slide":3,"name":"Shape 10","bbox":[354.24,244.8,42.24,42.24]}
+{"kind":"textbox","id":"sh/83ulovat","slide":3,"name":"Text 11","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[354.24,244.8,42.24,42.24]}
+{"kind":"textbox","id":"sh/v6l4jq94","slide":3,"name":"Text 12","text":"Scheduling","textPreview":"Scheduling","textChars":10,"textLines":1,"bbox":[289.92,297.6,170.88,33.6]}
+{"kind":"textbox","id":"sh/a5c3ql8z","slide":3,"name":"Text 13","text":"BatchScheduler PULL 방식\nSkip-to-Latest 큐 관리","textPreview":"BatchScheduler PULL 방식 | Skip-to-Latest 큐 관리","textChars":42,"textLines":2,"bbox":[289.92,331.2,170.88,55.68]}
+{"kind":"textbox","id":"sh/x8nml0ra","slide":3,"name":"Text 14","text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[474.24,286.08,23.04,42.24]}
+{"kind":"shape","id":"sh/w7ulsvqp","slide":3,"name":"Shape 15","bbox":[499.2,225.6,193.92,163.2]}
+{"kind":"shape","id":"sh/ja54na9g","slide":3,"name":"Shape 16","bbox":[575.04,244.8,42.24,42.24]}
+{"kind":"textbox","id":"sh/i9w3u58v","slide":3,"name":"Text 17","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[575.04,244.8,42.24,42.24]}
+{"kind":"textbox","id":"sh/e10f2twf","slide":3,"name":"Text 18","text":"Inference","textPreview":"Inference","textChars":9,"textLines":1,"bbox":[510.72,297.6,170.88,33.6]}
+{"kind":"textbox","id":"sh/f29gbyx0","slide":3,"name":"Text 19","text":"OneFormer Swin-Large\nFull-Res 단일 추론(bf16)","textPreview":"OneFormer Swin-Large | Full-Res 단일 추론(bf16)","textChars":41,"textLines":2,"bbox":[510.72,331.2,170.88,55.68]}
+{"kind":"textbox","id":"sh/03ix43e5","slide":3,"name":"Text 20","text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[695.04,286.08,23.04,42.24]}
+{"kind":"shape","id":"sh/14ryd8fq","slide":3,"name":"Shape 21","bbox":[720,225.6,193.92,163.2]}
+{"kind":"shape","id":"sh/6d0fytg3","slide":3,"name":"Shape 22","bbox":[795.84,244.8,42.24,42.24]}
+{"kind":"textbox","id":"sh/re9g7yxo","slide":3,"name":"Text 23","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[795.84,244.8,42.24,42.24]}
+{"kind":"textbox","id":"sh/sfix03y9","slide":3,"name":"Text 24","text":"Events","textPreview":"Events","textChars":6,"textLines":1,"bbox":[731.52,297.6,170.88,33.6]}
+{"kind":"textbox","id":"sh/tgry9ofu","slide":3,"name":"Text 25","text":"점유율 계산 · 임계치 판정\n알람 + 증거 스냅샷 저장","textPreview":"점유율 계산 · 임계치 판정 | 알람 + 증거 스냅샷 저장","textChars":30,"textLines":2,"bbox":[731.52,331.2,170.88,55.68]}
+{"kind":"textbox","id":"sh/a9kfadwn","slide":3,"name":"Text 26","text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[915.84,286.08,23.04,42.24]}
+{"kind":"shape","id":"sh/batgjixs","slide":3,"name":"Shape 27","bbox":[940.8,225.6,193.92,163.2]}
+{"kind":"shape","id":"sh/l4fi9cza","slide":3,"name":"Shape 28","bbox":[1016.64,244.8,42.24,42.24]}
+{"kind":"textbox","id":"sh/k3m1g7yp","slide":3,"name":"Text 29","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1016.64,244.8,42.24,42.24]}
+{"kind":"textbox","id":"sh/z2d07mh4","slide":3,"name":"Text 30","text":"Output","textPreview":"Output","textChars":6,"textLines":1,"bbox":[952.32,297.6,170.88,33.6]}
+{"kind":"textbox","id":"sh/y14jehgj","slide":3,"name":"Text 31","text":"HLS(/dev/shm) · MJPEG\n대시보드 · 외부 API 연동","textPreview":"HLS(/dev/shm) · MJPEG | 대시보드 · 외부 API 연동","textChars":38,"textLines":2,"bbox":[952.32,331.2,170.88,55.68]}
+{"kind":"textbox","id":"sh/x0vi5czy","slide":3,"name":"Text 32","text":"기술 스택","textPreview":"기술 스택","textChars":5,"textLines":1,"bbox":[57.6,417.6,384,33.6]}
+{"kind":"shape","id":"sh/czmhc7id","slide":3,"name":"Shape 33","bbox":[57.6,460.8,1164.48,34.56]}
+{"kind":"textbox","id":"sh/byd032h8","slide":3,"name":"Text 34","text":"프레임워크","textPreview":"프레임워크","textChars":5,"textLines":1,"bbox":[81.6,460.8,230.4,34.56]}
+{"kind":"textbox","id":"sh/ax4zax0n","slide":3,"name":"Text 35","text":"PyTorch · Transformers ≥ 5.9.0","textPreview":"PyTorch · Transformers ≥ 5.9.0","textChars":30,"textLines":1,"bbox":[316.8,460.8,883.2,34.56]}
+{"kind":"shape","id":"sh/hwzihwzi","slide":3,"name":"Shape 36","bbox":[57.6,501.12,1164.48,34.56]}
+{"kind":"textbox","id":"sh/wv61obyx","slide":3,"name":"Text 37","text":"정밀도","textPreview":"정밀도","textChars":3,"textLines":1,"bbox":[81.6,501.12,230.4,34.56]}
+{"kind":"textbox","id":"sh/4nuhs7uh","slide":3,"name":"Text 38","text":"bfloat16 / FP16 자동 혼합 정밀도(AMP)","textPreview":"bfloat16 / FP16 자동 혼합 정밀도(AMP)","textChars":30,"textLines":1,"bbox":[316.8,501.12,883.2,34.56]}
+{"kind":"shape","id":"sh/po3ilcvm","slide":3,"name":"Shape 39","bbox":[57.6,541.44,1164.48,34.56]}
+{"kind":"textbox","id":"sh/21szqxcb","slide":3,"name":"Text 40","text":"스트리밍","textPreview":"스트리밍","textChars":4,"textLines":1,"bbox":[81.6,541.44,230.4,34.56]}
+{"kind":"textbox","id":"sh/32l0j2dw","slide":3,"name":"Text 41","text":"FFmpeg NVDEC · HLS (RAM 디스크)","textPreview":"FFmpeg NVDEC · HLS (RAM 디스크)","textChars":28,"textLines":1,"bbox":[316.8,541.44,883.2,34.56]}
+{"kind":"shape","id":"sh/cruhwrud","slide":3,"name":"Shape 42","bbox":[57.6,581.76,1164.48,34.56]}
+{"kind":"textbox","id":"sh/ds3ipcvy","slide":3,"name":"Text 43","text":"웹 서버","textPreview":"웹 서버","textChars":4,"textLines":1,"bbox":[81.6,581.76,230.4,34.56]}
+{"kind":"textbox","id":"sh/qpczuhc7","slide":3,"name":"Text 44","text":"Flask (MJPEG + 대시보드)","textPreview":"Flask (MJPEG + 대시보드)","textChars":20,"textLines":1,"bbox":[316.8,581.76,883.2,34.56]}
+{"kind":"shape","id":"sh/rql0nmds","slide":3,"name":"Shape 45","bbox":[57.6,622.08,1164.48,34.56]}
+{"kind":"textbox","id":"sh/0ve10ru9","slide":3,"name":"Text 46","text":"연동","textPreview":"연동","textChars":2,"textLines":1,"bbox":[81.6,622.08,230.4,34.56]}
+{"kind":"textbox","id":"sh/1wnitwvu","slide":3,"name":"Text 47","text":"REST API · Redis 캐시 · SQLite WAL","textPreview":"REST API · Redis 캐시 · SQLite WAL","textChars":32,"textLines":1,"bbox":[316.8,622.08,883.2,34.56]}
+{"kind":"textbox","id":"sh/v29cfu18","slide":3,"name":"Text 48","text":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textPreview":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textChars":39,"textLines":1,"bbox":[48,687.36,768,28.8]}
+{"kind":"textbox","id":"sh/a10b6p03","slide":3,"name":"Text 49","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1190.4,687.36,48,28.8]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"[파이프라인 용어 설명]\nRTSP: CCTV가 영상을 실시간으로 전송하는 표준 프로토콜입니다. FFmpeg NVDEC는 이 영상을 압축 해제(디코딩)하는 작업을 CPU 대신 GPU 전용 하드웨어로 처리해 속도를 높이는 기술입니다.\nBatchScheduler PULL 방식 / Skip-to-Latest: 프레임이 밀려도 오래된 프레임을 순서대로 처리하지 않고, 항상 '가장 최신 프레임'만 골라 처리합니다. 실시간 알람 시스템에서는 5초 전 화면보다 지금 화면이 중요하기 때문입니다.\nbf16(bfloat16): 계산 정밀도를 32비트에서 16비트로 낮춰 속도와 메모리 사용량을 줄이는 기법입니다. 정확도 손실은 거의 없는 수준으로 관리됩니다.\nHLS / MJPEG: 대시보드나 외부 화면에 영상을 실시간으로 내보내는 표준 스트리밍 포맷입니다. 별도 전용 플레이어 없이 웹브라우저에서도 재생 가능합니다.\n"}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"PROVEN IN PRODUCTION","textShapes":14}
+{"kind":"textbox","id":"sh/1cj2d8b6","slide":4,"name":"Text 0","text":"PROVEN IN PRODUCTION","textPreview":"PROVEN IN PRODUCTION","textChars":20,"textLines":1,"bbox":[57.6,40.32,768,30.72]}
+{"kind":"textbox","id":"sh/0ba143al","slide":4,"name":"Text 1","text":"설계도가 아닌, 실제 가동 중인 시스템","textPreview":"설계도가 아닌, 실제 가동 중인 시스템","textChars":21,"textLines":1,"bbox":[57.6,69.12,1132.8,76.8]}
+{"kind":"textbox","id":"sh/rm1k7yt4","slide":4,"name":"Text 2","text":"RTSP 수집부터 알람·대시보드 송출까지 전 구간이 코드 레벨로 검증된 프로덕션 아키텍처","textPreview":"RTSP 수집부터 알람·대시보드 송출까지 전 구간이 코드 레벨로 검증된 프로덕션 아키텍처","textChars":49,"textLines":1,"bbox":[57.6,144,1132.8,38.4]}
+{"kind":"shape","id":"sh/ql8jytsj","slide":4,"name":"Shape 3","bbox":[57.6,201.6,705.6,444.48]}
+{"kind":"textbox","id":"sh/sna103ap","slide":4,"name":"Text 4","text":"이것이 비즈니스에 의미하는 것","textPreview":"이것이 비즈니스에 의미하는 것","textChars":16,"textLines":1,"bbox":[782.4,201.6,439.68,38.4]}
+{"kind":"shape","id":"sh/3ihk3et8","slide":4,"name":"Shape 5","bbox":[782.4,257.28,10.56,10.56]}
+{"kind":"textbox","id":"sh/ih8ju9sn","slide":4,"name":"Text 6","text":"도입 리스크 최소화","textPreview":"도입 리스크 최소화","textChars":10,"textLines":1,"bbox":[805.44,248.64,416.64,28.8]}
+{"kind":"textbox","id":"sh/kbm987y5","slide":4,"name":"Text 7","text":"프로토타입이 아닌 실동작 코드. PID 구동 확인, 즉시 파일럿 배포 가능","textPreview":"프로토타입이 아닌 실동작 코드. PID 구동 확인, 즉시 파일럿 배포 가능","textChars":41,"textLines":1,"bbox":[805.44,277.44,416.64,62.4]}
+{"kind":"shape","id":"sh/5cva1cfq","slide":4,"name":"Shape 8","bbox":[782.4,356.16,10.56,10.56]}
+{"kind":"textbox","id":"sh/i94r6xgz","slide":4,"name":"Text 9","text":"운영 인건비 절감","textPreview":"운영 인건비 절감","textChars":9,"textLines":1,"bbox":[805.44,347.52,416.64,28.8]}
+{"kind":"textbox","id":"sh/jadsz2xk","slide":4,"name":"Text 10","text":"EventHandler가 알람·증거 저장을 자동화 → 상시 육안 모니터링 인력 불필요","textPreview":"EventHandler가 알람·증거 저장을 자동화 → 상시 육안 모니터링 인력 불필요","textChars":47,"textLines":1,"bbox":[805.44,376.32,416.64,62.4]}
+{"kind":"shape","id":"sh/w72947yt","slide":4,"name":"Shape 11","bbox":[782.4,455.04,10.56,10.56]}
+{"kind":"textbox","id":"sh/x8vaxsfe","slide":4,"name":"Text 12","text":"확장 가능한 구조","textPreview":"확장 가능한 구조","textChars":9,"textLines":1,"bbox":[805.44,446.4,416.64,28.8]}
+{"kind":"textbox","id":"sh/a5kr2xg3","slide":4,"name":"Text 13","text":"카메라 1대 추가 시 Ingester 스레드만 증설 → 다수 CCTV 사이트로 선형 확장","textPreview":"카메라 1대 추가 시 Ingester 스레드만 증설 → 다수 CCTV 사이트로 선형 확장","textChars":49,"textLines":1,"bbox":[805.44,475.2,416.64,62.4]}
+{"kind":"shape","id":"sh/v6tsv2xo","slide":4,"name":"Shape 14","bbox":[782.4,553.92,10.56,10.56]}
+{"kind":"textbox","id":"sh/g36tgryd","slide":4,"name":"Text 15","text":"표준 인프라 호환","textPreview":"표준 인프라 호환","textChars":9,"textLines":1,"bbox":[805.44,545.28,416.64,28.8]}
+{"kind":"textbox","id":"sh/h4fa9wfy","slide":4,"name":"Text 16","text":"HLS·MJPEG·REST API 등 범용 프로토콜 사용 → 기존 관제 대시보드에 즉시 연동","textPreview":"HLS·MJPEG·REST API 등 범용 프로토콜 사용 → 기존 관제 대시보드에 즉시 연동","textChars":51,"textLines":1,"bbox":[805.44,574.08,416.64,62.4]}
+{"kind":"textbox","id":"sh/p0batw72","slide":4,"name":"Text 17","text":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textPreview":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textChars":39,"textLines":1,"bbox":[48,687.36,768,28.8]}
+{"kind":"textbox","id":"sh/oz29krqh","slide":4,"name":"Text 18","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1190.4,687.36,48,28.8]}
+{"kind":"image","id":"im/83apgj29","slide":4,"name":"Image 0","bbox":[72,216,676.8,415.68]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"[이 슬라이드가 중요한 이유]\n'프로토타입이 아니라 실동작 코드'라는 말은 — 데모용으로 잠깐 돌려본 것이 아니라, 실제 서버에서 PID(프로세스 번호, 리눅스에서 프로그램이 살아있다는 증거)가 부여된 채로 계속 가동되고 있다는 뜻입니다. 즉 지금 당장 파일럿 현장에 배포해도 코드 레벨의 재작업이 필요 없습니다.\n운영 인건비 절감 항목의 EventHandler는 '이상 감지 시 자동으로 캡처 저장 + 알람 발송'을 담당하는 내부 모듈 이름입니다. 사람이 CCTV 화면을 계속 지켜볼 필요가 없어진다는 의미입니다.\n확장 가능한 구조: 카메라 1대를 추가할 때 서버 전체를 다시 설계할 필요 없이, Ingester라는 담당 모듈(스레드) 하나만 늘리면 됩니다 — 비용·개발기간 예측이 쉬워집니다.\n"}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"MODEL EVOLUTION","textShapes":23}
+{"kind":"textbox","id":"sh/dgbulwnm","slide":5,"name":"Text 0","text":"MODEL EVOLUTION","textPreview":"MODEL EVOLUTION","textChars":15,"textLines":1,"bbox":[57.6,40.32,768,30.72]}
+{"kind":"textbox","id":"sh/cf2tcr61","slide":5,"name":"Text 1","text":"모델 아키텍처 진화: 3단계 선택 과정","textPreview":"모델 아키텍처 진화: 3단계 선택 과정","textChars":21,"textLines":1,"bbox":[57.6,69.12,1132.8,76.8]}
+{"kind":"textbox","id":"sh/z2tcnm5s","slide":5,"name":"Text 2","text":"실시간성과 정확도의 균형을 찾기 위해 두 차례의 구조 전환을 거쳐 최종 모델을 확정","textPreview":"실시간성과 정확도의 균형을 찾기 위해 두 차례의 구조 전환을 거쳐 최종 모델을 확정","textChars":46,"textLines":1,"bbox":[57.6,144,1132.8,38.4]}
+{"kind":"shape","id":"sh/yhkbe1o7","slide":5,"name":"Shape 3","bbox":[57.6,225.6,370.56,360]}
+{"kind":"textbox","id":"sh/l4bupwny","slide":5,"name":"Text 4","text":"Phase 0","textPreview":"Phase 0","textChars":7,"textLines":1,"bbox":[84.48,246.72,316.8,28.8]}
+{"kind":"shape","id":"sh/032tgr6d","slide":5,"name":"Shape 5","bbox":[279.36,244.8,122.88,30.72]}
+{"kind":"textbox","id":"sh/n6dcr65o","slide":5,"name":"Text 6","text":"베이스라인","textPreview":"베이스라인","textChars":5,"textLines":1,"bbox":[279.36,244.8,122.88,30.72]}
+{"kind":"textbox","id":"sh/m5kbi1oj","slide":5,"name":"Text 7","text":"DeepLabV3+","textPreview":"DeepLabV3+","textChars":10,"textLines":1,"bbox":[84.48,285.12,316.8,43.2]}
+{"kind":"textbox","id":"sh/w32dkbuh","slide":5,"name":"Text 8","text":"ResNet50 · ImageNet","textPreview":"ResNet50 · ImageNet","textChars":19,"textLines":1,"bbox":[84.48,327.36,316.8,28.8]}
+{"kind":"shape","id":"sh/x4vedgvm","slide":5,"name":"Shape 9","bbox":[84.48,367.68,316.8,0]}
+{"kind":"textbox","id":"sh/ahkvi1cb","slide":5,"name":"Text 10","text":"정밀도 ▲ / 속도 ▼","textPreview":"정밀도 ▲ / 속도 ▼","textChars":12,"textLines":1,"bbox":[84.48,381.12,316.8,33.6]}
+{"kind":"textbox","id":"sh/v2twb6dw","slide":5,"name":"Text 11","text":"다중 스케일 특징 추출은 우수하나 FPS가 낮아 실시간 서비스에 부적합, Batch Queue Full 빈번","textPreview":"다중 스케일 특징 추출은 우수하나 FPS가 낮아 실시간 서비스에 부적합, Batch Queue Full 빈번","textChars":60,"textLines":1,"bbox":[84.48,422.4,316.8,148.8]}
+{"kind":"shape","id":"sh/k7mxovud","slide":5,"name":"Shape 12","bbox":[455.04,225.6,370.56,360]}
+{"kind":"textbox","id":"sh/58vehgvy","slide":5,"name":"Text 13","text":"Phase 1","textPreview":"Phase 1","textChars":7,"textLines":1,"bbox":[481.92,246.72,316.8,28.8]}
+{"kind":"shape","id":"sh/i54fmlc7","slide":5,"name":"Shape 14","bbox":[676.8,244.8,122.88,30.72]}
+{"kind":"textbox","id":"sh/j6dwfqds","slide":5,"name":"Text 15","text":"경량화 시도","textPreview":"경량화 시도","textChars":6,"textLines":1,"bbox":[676.8,244.8,122.88,30.72]}
+{"kind":"textbox","id":"sh/sb6xsvu9","slide":5,"name":"Text 16","text":"Fast-SCNN","textPreview":"Fast-SCNN","textChars":9,"textLines":1,"bbox":[481.92,285.12,316.8,43.2]}
+{"kind":"textbox","id":"sh/tcfel0vu","slide":5,"name":"Text 17","text":"경량 실시간 모델","textPreview":"경량 실시간 모델","textChars":9,"textLines":1,"bbox":[481.92,327.36,316.8,28.8]}
+{"kind":"shape","id":"sh/hgrmpwj2","slide":5,"name":"Shape 18","bbox":[481.92,367.68,316.8,0]}
+{"kind":"textbox","id":"sh/gfi5grih","slide":5,"name":"Text 19","text":"속도 ▲ / 정밀도 ▼","textPreview":"속도 ▲ / 정밀도 ▼","textChars":12,"textLines":1,"bbox":[481.92,381.12,316.8,33.6]}
+{"kind":"textbox","id":"sh/fe94nm1w","slide":5,"name":"Text 20","text":"추론 속도는 크게 개선됐지만 조류 경계가 불명확해 정밀도가 저하, 하이브리드 운용 필요","textPreview":"추론 속도는 크게 개선됐지만 조류 경계가 불명확해 정밀도가 저하, 하이브리드 운용 필요","textChars":48,"textLines":1,"bbox":[481.92,422.4,316.8,148.8]}
+{"kind":"shape","id":"sh/ud0ne10b","slide":5,"name":"Shape 21","bbox":[852.48,225.6,370.56,360]}
+{"kind":"textbox","id":"sh/pkr6tgjy","slide":5,"name":"Text 22","text":"Phase 2","textPreview":"Phase 2","textChars":7,"textLines":1,"bbox":[879.36,246.72,316.8,28.8]}
+{"kind":"shape","id":"sh/4ji5kbid","slide":5,"name":"Shape 23","bbox":[1074.24,244.8,122.88,30.72]}
+{"kind":"textbox","id":"sh/3i94r61s","slide":5,"name":"Text 24","text":"최종 선택","textPreview":"최종 선택","textChars":5,"textLines":1,"bbox":[1074.24,244.8,122.88,30.72]}
+{"kind":"textbox","id":"sh/2h0ni107","slide":5,"name":"Text 25","text":"OneFormer","textPreview":"OneFormer","textChars":9,"textLines":1,"bbox":[879.36,285.12,316.8,43.2]}
+{"kind":"textbox","id":"sh/5o7mhcju","slide":5,"name":"Text 26","text":"Swin-Large · ≈236M","textPreview":"Swin-Large · ≈236M","textChars":18,"textLines":1,"bbox":[879.36,327.36,316.8,28.8]}
+{"kind":"shape","id":"sh/kny587i9","slide":5,"name":"Shape 27","bbox":[879.36,367.68,316.8,0]}
+{"kind":"textbox","id":"sh/atcjidg7","slide":5,"name":"Text 28","text":"정밀도 ▲ / 속도 ▲","textPreview":"정밀도 ▲ / 속도 ▲","textChars":12,"textLines":1,"bbox":[879.36,381.12,316.8,33.6]}
+{"kind":"textbox","id":"sh/vu5kbihc","slide":5,"name":"Text 29","text":"Universal Segmentation + ADE20K 사전학습을 sludge 도메인으로 전이. 최종 채택 모델","textPreview":"Universal Segmentation + ADE20K 사전학습을 sludge 도메인으로 전이. 최종 채택 모델","textChars":63,"textLines":1,"bbox":[879.36,422.4,316.8,148.8]}
+{"kind":"textbox","id":"sh/wve1knyx","slide":5,"name":"Text 30","text":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textPreview":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textChars":39,"textLines":1,"bbox":[48,687.36,768,28.8]}
+{"kind":"textbox","id":"sh/xwn2dszi","slide":5,"name":"Text 31","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1190.4,687.36,48,28.8]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"[3단계 모델 선택 배경]\nDeepLabV3+ (Phase 0): ResNet50이라는 비교적 오래되고 검증된 백본에 ImageNet(범용 이미지 100만 장) 사전학습을 적용한 베이스라인입니다. 정확도는 준수했지만 속도가 느려 실시간 서비스에 부적합했습니다(Batch Queue Full = 처리 대기열이 계속 밀리는 현상).\nFast-SCNN (Phase 1): 이름 그대로 '빠른' 경량 모델로 바꿔봤지만, 이번엔 속도는 확보했는데 조류 경계가 흐릿하게 나와 정밀도가 떨어졌습니다. 즉 속도와 정확도를 동시에 만족하는 모델이 아니었습니다.\nOneFormer (Phase 2, 최종): Swin-Large라는 Vision Transformer 계열 백본을 쓰는 범용 세그멘테이션 모델입니다. ADE20K(범용 실내외 장면 20만 장 데이터셋)로 사전학습된 모델을, 저희 조류 도메인 데이터로 재학습(전이학습)시켜 정확도와 속도를 모두 확보했습니다.\n"}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"KEY BREAKTHROUGH","textShapes":17}
+{"kind":"textbox","id":"sh/yhg7epsj","slide":6,"name":"Text 0","text":"KEY BREAKTHROUGH","textPreview":"KEY BREAKTHROUGH","textChars":16,"textLines":1,"bbox":[57.6,40.32,768,30.72]}
+{"kind":"textbox","id":"sh/zi98nu94","slide":6,"name":"Text 1","text":"타일링 제거 → Full Resolution 단일 추론","textPreview":"타일링 제거 → Full Resolution 단일 추론","textChars":30,"textLines":1,"bbox":[57.6,69.12,1132.8,76.8]}
+{"kind":"textbox","id":"sh/87ipkzal","slide":6,"name":"Text 2","text":"“GPU 사용량은 높은데 FPS가 낮다” — 병목의 원인은 연산량이 아닌 타일 호출 횟수와 전처리 오버헤드였음","textPreview":"“GPU 사용량은 높은데 FPS가 낮다” — 병목의 원인은 연산량이 아닌 타일 호출 횟수와 전처리 오버헤드였음","textChars":61,"textLines":1,"bbox":[57.6,144,1132.8,38.4]}
+{"kind":"textbox","id":"sh/98rqt4r6","slide":6,"name":"Text 3","text":"평균 지연시간 (ms)","textPreview":"평균 지연시간 (ms)","textChars":12,"textLines":1,"bbox":[57.6,201.6,537.6,28.8]}
+{"kind":"textbox","id":"sh/ml07i9sv","slide":6,"name":"Text 4","text":"Phase 2 전환 시점 벤치마크 (2026-06-15)","textPreview":"Phase 2 전환 시점 벤치마크 (2026-06-15)","textChars":31,"textLines":1,"bbox":[57.6,230.4,537.6,24]}
+{"kind":"textbox","id":"sh/oryp8fah","slide":6,"name":"Text 5","text":"↓ 2.3배 개선","textPreview":"↓ 2.3배 개선","textChars":9,"textLines":1,"bbox":[48,484.8,566.4,33.6]}
+{"kind":"textbox","id":"sh/pc76hkr2","slide":6,"name":"Text 6","text":"정확도 (mIoU)","textPreview":"정확도 (mIoU)","textChars":10,"textLines":1,"bbox":[657.6,201.6,537.6,28.8]}
+{"kind":"textbox","id":"sh/h4bupgn6","slide":6,"name":"Text 7","text":"Phase 2 전환 시점 벤치마크 (2026-06-15) · 참고: 최종 검증 mIoU는 ‘최종 성능 지표’ 슬라이드에서 별도 제시","textPreview":"Phase 2 전환 시점 벤치마크 (2026-06-15) · 참고: 최종 검증 mIoU는 ‘최종 성능 지표’ 슬라이드에서 별도 제시","textChars":73,"textLines":1,"bbox":[657.6,230.4,566.4,24]}
+{"kind":"textbox","id":"sh/v2tcn650","slide":6,"name":"Text 8","text":"+0.0286 상승","textPreview":"+0.0286 상승","textChars":10,"textLines":1,"bbox":[648,484.8,566.4,33.6]}
+{"kind":"shape","id":"sh/u1kbu1ov","slide":6,"name":"Shape 9","bbox":[57.6,542.4,370.56,110.4]}
+{"kind":"textbox","id":"sh/5svutgni","slide":6,"name":"Text 10","text":"32-pixel Alignment","textPreview":"32-pixel Alignment","textChars":18,"textLines":1,"bbox":[78.72,553.92,328.32,30.72]}
+{"kind":"textbox","id":"sh/47mt0b6x","slide":6,"name":"Text 11","text":"1080→1088 패딩으로 Swin Transformer 차원 요구사항 충족","textPreview":"1080→1088 패딩으로 Swin Transformer 차원 요구사항 충족","textChars":42,"textLines":1,"bbox":[78.72,586.56,328.32,59.52]}
+{"kind":"shape","id":"sh/j6dcr65c","slide":6,"name":"Shape 12","bbox":[455.04,542.4,370.56,110.4]}
+{"kind":"textbox","id":"sh/i54bylor","slide":6,"name":"Text 13","text":"bfloat16 AMP","textPreview":"bfloat16 AMP","textChars":12,"textLines":1,"bbox":[476.16,553.92,328.32,30.72]}
+{"kind":"textbox","id":"sh/twfux0ne","slide":6,"name":"Text 14","text":"torch.cuda.amp.autocast()로 FP16 추론 가속, 최대 VRAM 6.33GB","textPreview":"torch.cuda.amp.autocast()로 FP16 추론 가속, 최대 VRAM 6.33GB","textChars":53,"textLines":1,"bbox":[476.16,586.56,328.32,59.52]}
+{"kind":"shape","id":"sh/svmt4v6t","slide":6,"name":"Shape 15","bbox":[852.48,542.4,370.56,110.4]}
+{"kind":"textbox","id":"sh/cbe5g3ih","slide":6,"name":"Text 16","text":"Zero-copy 아키텍처","textPreview":"Zero-copy 아키텍처","textChars":14,"textLines":1,"bbox":[873.6,553.92,328.32,30.72]}
+{"kind":"textbox","id":"sh/dcnm98zm","slide":6,"name":"Text 17","text":"PyTorch↔Numpy 변환 시 메모리 복사 최소화","textPreview":"PyTorch↔Numpy 변환 시 메모리 복사 최소화","textChars":29,"textLines":1,"bbox":[873.6,586.56,328.32,59.52]}
+{"kind":"textbox","id":"sh/qpwnet0b","slide":6,"name":"Text 18","text":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textPreview":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textChars":39,"textLines":1,"bbox":[48,687.36,768,28.8]}
+{"kind":"textbox","id":"sh/bq547yhw","slide":6,"name":"Text 19","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1190.4,687.36,48,28.8]}
+{"kind":"chart","id":"ch/03il0byt","slide":6,"name":"Chart 0","chartType":"bar","bbox":[48,259.2,566.4,220.8]}
+{"kind":"chart","id":"ch/14rm9gze","slide":6,"name":"Chart 1","chartType":"bar","bbox":[648,259.2,566.4,220.8]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"[타일링 제거가 왜 핵심 돌파구인가]\n기존 방식(타일링)은 큰 이미지를 1024×1024 조각 여러 개로 잘라 AI에 각각 넣고 다시 이어 붙였습니다. 문제는 GPU 연산량 자체보다, '조각마다 AI를 반복 호출하는 오버헤드'와 '조각을 이어붙이는 전처리 비용'이 병목이었다는 점입니다 — 그래서 GPU 사용량은 높은데 실제 처리 속도(FPS)는 낮았습니다.\n해결책은 이미지를 자르지 않고 1920×1088 전체를 한 번에 넣는 것(Full Resolution 단일 추론)입니다. 결과적으로 평균 지연시간이 1481ms → 646ms로 2.3배 빨라졌고, 정확도(mIoU)도 0.3534 → 0.382로 함께 올랐습니다(이 수치는 Phase 2 전환 시점의 벤치마크 비교값이며, 최종 확정 성능인 Test mIoU 0.770과는 다른 수치입니다 — 자세한 mIoU 설명은 10번 슬라이드).\n32-pixel Alignment / bfloat16 AMP / Zero-copy: 각각 'Swin Transformer가 요구하는 이미지 크기 규격에 맞추는 패딩(1080→1088)', '정밀도를 낮춰 연산 속도를 높이는 기법(최대 VRAM 6.33GB로 관리)', 'PyTorch와 Numpy 사이에서 데이터를 복사하지 않고 그대로 주고받아 메모리 낭비를 줄이는 기법'입니다.\n"}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"WHY ACCURACY MATTERS","textShapes":14}
+{"kind":"textbox","id":"sh/cb2tkvap","slide":7,"name":"Text 0","text":"WHY ACCURACY MATTERS","textPreview":"WHY ACCURACY MATTERS","textChars":20,"textLines":1,"bbox":[57.6,40.32,768,30.72]}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"name":"Text 1","text":"1픽셀의 오차가 알람의 신뢰도를 무너뜨린다","textPreview":"1픽셀의 오차가 알람의 신뢰도를 무너뜨린다","textChars":23,"textLines":1,"bbox":[57.6,69.12,1132.8,76.8]}
+{"kind":"textbox","id":"sh/ydkbm5sv","slide":7,"name":"Text 2","text":"타일 경계에서 발생한 예측 불일치가 어떻게 오탐·미탐으로 이어지는지, 실제 검증 로그로 확인","textPreview":"타일 경계에서 발생한 예측 불일치가 어떻게 오탐·미탐으로 이어지는지, 실제 검증 로그로 확인","textChars":51,"textLines":1,"bbox":[57.6,144,1132.8,38.4]}
+{"kind":"shape","id":"sh/zedcfa9g","slide":7,"name":"Shape 3","bbox":[57.6,201.6,772.8,427.2]}
+{"kind":"shape","id":"sh/l0vuh0rm","slide":7,"name":"Shape 4","bbox":[854.4,201.6,367.68,427.2]}
+{"kind":"textbox","id":"sh/eh0ba1sr","slide":7,"name":"Text 5","text":"비즈니스 리스크","textPreview":"비즈니스 리스크","textChars":8,"textLines":1,"bbox":[879.36,220.8,317.76,33.6]}
+{"kind":"shape","id":"sh/fi9c369c","slide":7,"name":"Shape 6","bbox":[879.36,279.36,9.6,9.6]}
+{"kind":"textbox","id":"sh/baxkjqlk","slide":7,"name":"Text 7","text":"오탐(False Alarm)","textPreview":"오탐(False Alarm)","textChars":15,"textLines":1,"bbox":[900.48,270.72,296.64,28.8]}
+{"kind":"textbox","id":"sh/a9ojq5kz","slide":7,"name":"Text 8","text":"경계 불일치 영역이 오검출되어 불필요한 알람·현장 출동 비용 발생","textPreview":"경계 불일치 영역이 오검출되어 불필요한 알람·현장 출동 비용 발생","textChars":36,"textLines":1,"bbox":[900.48,299.52,296.64,62.4]}
+{"kind":"shape","id":"sh/xcz2l03q","slide":7,"name":"Shape 9","bbox":[879.36,377.28,9.6,9.6]}
+{"kind":"textbox","id":"sh/cbq1sv25","slide":7,"name":"Text 10","text":"미탐(Missed Alarm)","textPreview":"미탐(Missed Alarm)","textChars":16,"textLines":1,"bbox":[900.48,368.64,296.64,28.8]}
+{"kind":"textbox","id":"sh/n6x0fqlo","slide":7,"name":"Text 11","text":"끊긴 영역만큼 실제 점유율이 과소 계산 → 임계치 미달로 경보 누락","textPreview":"끊긴 영역만큼 실제 점유율이 과소 계산 → 임계치 미달로 경보 누락","textChars":37,"textLines":1,"bbox":[900.48,397.44,296.64,62.4]}
+{"kind":"shape","id":"sh/25ojml43","slide":7,"name":"Shape 12","bbox":[879.36,475.2,9.6,9.6]}
+{"kind":"textbox","id":"sh/p8fih03e","slide":7,"name":"Text 13","text":"신뢰도 하락","textPreview":"신뢰도 하락","textChars":6,"textLines":1,"bbox":[900.48,466.56,296.64,28.8]}
+{"kind":"textbox","id":"sh/o761ov2t","slide":7,"name":"Text 14","text":"동일 조류를 타일마다 다르게 판정 → 운영자의 시스템 신뢰 저하","textPreview":"동일 조류를 타일마다 다르게 판정 → 운영자의 시스템 신뢰 저하","textChars":35,"textLines":1,"bbox":[900.48,495.36,296.64,62.4]}
+{"kind":"shape","id":"sh/f2d0b6lc","slide":7,"name":"Shape 15","bbox":[879.36,572.16,317.76,0]}
+{"kind":"shape","id":"sh/eh4jil4r","slide":7,"name":"Shape 16","bbox":[873.6,591.36,329.28,100.8]}
+{"kind":"textbox","id":"sh/id4ju1oz","slide":7,"name":"Text 17","text":"해결 → Full Resolution 전환","textPreview":"해결 → Full Resolution 전환","textChars":23,"textLines":1,"bbox":[892.8,600.96,290.88,28.8]}
+{"kind":"textbox","id":"sh/jedkn654","slide":7,"name":"Text 18","text":"타일 경계 자체를 제거해 판정 불일치 원천 차단, 오탐·미탐 리스크를 구조적으로 해소","textPreview":"타일 경계 자체를 제거해 판정 불일치 원천 차단, 오탐·미탐 리스크를 구조적으로 해소","textChars":47,"textLines":1,"bbox":[892.8,627.84,290.88,57.6]}
+{"kind":"textbox","id":"sh/4fm1wb6p","slide":7,"name":"Text 19","text":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textPreview":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textChars":39,"textLines":1,"bbox":[48,687.36,768,28.8]}
+{"kind":"textbox","id":"sh/50v2pgna","slide":7,"name":"Text 20","text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1190.4,687.36,48,28.8]}
+{"kind":"image","id":"im/50v6tonq","slide":7,"name":"Image 0","bbox":[72,216,744,398.4]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"[이 슬라이드가 나온 이유]\n타일 경계에서 두 조각의 판정이 서로 어긋나면, 실제로는 하나로 이어진 조류인데 AI가 마치 두 개의 서로 다른 물체처럼 잘못 인식할 수 있습니다. 이미지 속 이 상황을 실제 검증 로그로 보여드리는 슬라이드입니다.\n오탐(False Alarm) / 미탐(Missed Alarm): 각각 \"없는데 있다고 잘못 알람\"과 \"있는데 놓쳐서 알람이 안 옴\"을 뜻합니다. 오탐이 잦으면 불필요한 현장 출동 비용이, 미탐이 잦으면 실제 사고를 놓치는 리스크가 커집니다 — 두 가지 모두 시스템 신뢰도에 직결됩니다.\n이 문제의 해결책이 6번 슬라이드의 Full Resolution 전환입니다. 타일 경계 자체를 없애버렸기 때문에 이 슬라이드에서 보여드리는 오탐/미탐 원인이 구조적으로 사라졌습니다.\n"}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"DATASET & TRAINING","textShapes":31}
+{"kind":"textbox","id":"sh/18byd4zy","slide":8,"name":"Text 0","text":"DATASET & TRAINING","textPreview":"DATASET & TRAINING","textChars":18,"textLines":1,"bbox":[57.6,40.32,768,30.72]}
+{"kind":"textbox","id":"sh/g72x4zyd","slide":8,"name":"Text 1","text":"데이터셋 구성 및 학습 전략","textPreview":"데이터셋 구성 및 학습 전략","textChars":15,"textLines":1,"bbox":[57.6,69.12,1132.8,76.8]}
+{"kind":"shape","id":"sh/ri9g7uhw","slide":8,"name":"Shape 2","bbox":[57.6,148.8,345.6,504]}
+{"kind":"textbox","id":"sh/6h0fypgb","slide":8,"name":"Text 3","text":"1,238","textPreview":"1,238","textChars":5,"textLines":1,"bbox":[81.6,177.6,297.6,86.4]}
+{"kind":"textbox","id":"sh/tkby9kzm","slide":8,"name":"Text 4","text":"원본-마스크 이미지 쌍","textPreview":"원본-마스크 이미지 쌍","textChars":12,"textLines":1,"bbox":[81.6,249.6,297.6,38.4]}
+{"kind":"shape","id":"sh/sjix0zy1","slide":8,"name":"Shape 5","bbox":[81.6,302.4,297.6,0]}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"name":"Text 6","text":"Train","textPreview":"Train","textChars":5,"textLines":1,"bbox":[81.6,321.6,134.4,38.4]}
+{"kind":"textbox","id":"sh/id0fu50z","slide":8,"name":"Text 7","text":"866장 (70%)","textPreview":"866장 (70%)","textChars":10,"textLines":1,"bbox":[211.2,321.6,172.8,38.4]}
+{"kind":"textbox","id":"sh/o7ydoret","slide":8,"name":"Text 8","text":"Val","textPreview":"Val","textChars":3,"textLines":1,"bbox":[81.6,369.6,134.4,38.4]}
+{"kind":"textbox","id":"sh/98rehwve","slide":8,"name":"Text 9","text":"248장 (20%)","textPreview":"248장 (20%)","textChars":10,"textLines":1,"bbox":[211.2,369.6,172.8,38.4]}
+{"kind":"textbox","id":"sh/m5gvmhwn","slide":8,"name":"Text 10","text":"Test","textPreview":"Test","textChars":4,"textLines":1,"bbox":[81.6,417.6,134.4,38.4]}
+{"kind":"textbox","id":"sh/n6pwfmd8","slide":8,"name":"Text 11","text":"124장 (10%)","textPreview":"124장 (10%)","textChars":10,"textLines":1,"bbox":[211.2,417.6,172.8,38.4]}
+{"kind":"shape","id":"sh/0jydkreh","slide":8,"name":"Shape 12","bbox":[81.6,480,297.6,0]}
+{"kind":"textbox","id":"sh/1k7edwv2","slide":8,"name":"Text 13","text":"이미지 레벨 분리로 Data Leakage 방지 · 4개 CCTV 소스에서 수집(6-1/6-2/9-1/Sokheng)","textPreview":"이미지 레벨 분리로 Data Leakage 방지 · 4개 CCTV 소스에서 수집(6-1/6-2/9-1/Sokheng)","textChars":65,"textLines":1,"bbox":[81.6,499.2,297.6,134.4]}
+{"kind":"textbox","id":"sh/ehgvihwr","slide":8,"name":"Text 14","text":"Hybrid Loss Function","textPreview":"Hybrid Loss Function","textChars":20,"textLines":1,"bbox":[436.8,148.8,787.2,33.6]}
+{"kind":"textbox","id":"sh/zipwbmdc","slide":8,"name":"Text 15","text":"0.5 × BCEWithLogitsLoss  +  0.5 × DiceLoss","textPreview":"0.5 × BCEWithLogitsLoss  +  0.5 × DiceLoss","textChars":42,"textLines":1,"bbox":[436.8,182.4,787.2,28.8]}
+{"kind":"textbox","id":"sh/kfixwbe1","slide":8,"name":"Text 16","text":"조류 픽셀이 전체의 1~3% 미만인 극심한 클래스 불균형 문제를 DiceLoss로 보완","textPreview":"조류 픽셀이 전체의 1~3% 미만인 극심한 클래스 불균형 문제를 DiceLoss로 보완","textChars":48,"textLines":1,"bbox":[436.8,213.12,787.2,33.6]}
+{"kind":"shape","id":"sh/lgbepgvm","slide":8,"name":"Shape 17","bbox":[436.8,264,787.2,32.64]}
+{"kind":"textbox","id":"sh/tw7e9gnq","slide":8,"name":"Text 18","text":"Optimizer","textPreview":"Optimizer","textChars":9,"textLines":1,"bbox":[456,264,211.2,32.64]}
+{"kind":"textbox","id":"sh/svydgb65","slide":8,"name":"Text 19","text":"AdamW (lr=3e-4, weight decay=1e-4)","textPreview":"AdamW (lr=3e-4, weight decay=1e-4)","textChars":34,"textLines":1,"bbox":[672,264,537.6,32.64]}
+{"kind":"shape","id":"sh/7u5w765k","slide":8,"name":"Shape 20","bbox":[436.8,302.4,787.2,32.64]}
+{"kind":"textbox","id":"sh/6twve1oz","slide":8,"name":"Text 21","text":"Scheduler","textPreview":"Scheduler","textChars":9,"textLines":1,"bbox":[456,302.4,211.2,32.64]}
+{"kind":"textbox","id":"sh/5sne5wne","slide":8,"name":"Text 22","text":"CosineAnnealingLR","textPreview":"CosineAnnealingLR","textChars":17,"textLines":1,"bbox":[672,302.4,537.6,32.64]}
+{"kind":"shape","id":"sh/kredcr6t","slide":8,"name":"Shape 23","bbox":[436.8,340.8,787.2,32.64]}
+{"kind":"textbox","id":"sh/jq5w365o","slide":8,"name":"Text 24","text":"Precision","textPreview":"Precision","textChars":9,"textLines":1,"bbox":[456,340.8,211.2,32.64]}
+{"kind":"textbox","id":"sh/i5wva1o3","slide":8,"name":"Text 25","text":"bfloat16 / FP16 Mixed Precision (AMP)","textPreview":"bfloat16 / FP16 Mixed Precision (AMP)","textChars":37,"textLines":1,"bbox":[672,340.8,537.6,32.64]}
+{"kind":"textbox","id":"sh/x4ne1wni","slide":8,"name":"Text 26","text":"수면 특화 데이터 증강 (Albumentations)","textPreview":"수면 특화 데이터 증강 (Albumentations)","textChars":29,"textLines":1,"bbox":[436.8,417.6,787.2,33.6]}
+{"kind":"shape","id":"sh/w3ed8r6x","slide":8,"name":"Shape 27","bbox":[436.8,456,384,81.6]}
+{"kind":"textbox","id":"sh/m9sb2x4v","slide":8,"name":"Text 28","text":"ColorJitter","textPreview":"ColorJitter","textChars":11,"textLines":1,"bbox":[454.08,465.6,349.44,28.8]}
+{"kind":"textbox","id":"sh/na1sb2lg","slide":8,"name":"Text 29","text":"빛 반사·조명 변화 대응","textPreview":"빛 반사·조명 변화 대응","textChars":13,"textLines":1,"bbox":[454.08,496.32,349.44,33.6]}
+{"kind":"shape","id":"sh/8bat47ml","slide":8,"name":"Shape 30","bbox":[840,456,384,81.6]}
+{"kind":"textbox","id":"sh/9w3uds36","slide":8,"name":"Text 31","text":"GaussianBlur / MotionBlur","textPreview":"GaussianBlur / MotionBlur","textChars":25,"textLines":1,"bbox":[857.28,465.6,349.44,28.8]}
+{"kind":"textbox","id":"sh/y5sbed4j","slide":8,"name":"Text 32","text":"흐릿한 경계·수면 파동 대응","textPreview":"흐릿한 경계·수면 파동 대응","textChars":15,"textLines":1,"bbox":[857.28,496.32,349.44,33.6]}
+{"kind":"shape","id":"sh/z61s7il4","slide":8,"name":"Shape 33","bbox":[436.8,552,384,81.6]}
+{"kind":"textbox","id":"sh/07atgnmp","slide":8,"name":"Text 34","text":"RandomBrightnessContrast","textPreview":"RandomBrightnessContrast","textChars":24,"textLines":1,"bbox":[454.08,561.6,349.44,28.8]}
+{"kind":"textbox","id":"sh/l8ja9s3a","slide":8,"name":"Text 35","text":"안개·흐림 조건 모방","textPreview":"안개·흐림 조건 모방","textChars":11,"textLines":1,"bbox":[454.08,592.32,349.44,33.6]}
+{"kind":"shape","id":"sh/q18bad4n","slide":8,"name":"Shape 36","bbox":[840,552,384,81.6]}
+{"kind":"textbox","id":"sh/b2hs3il8","slide":8,"name":"Text 37","text":"Horizontal/Vertical Flip","textPreview":"Horizontal/Vertical Flip","textChars":24,"textLines":1,"bbox":[857.28,561.6,349.44,28.8]}
+{"kind":"textbox","id":"sh/3u18fepo","slide":8,"name":"Text 38","text":"위치 불변성 및 저각도 CCTV 모방","textPreview":"위치 불변성 및 저각도 CCTV 모방","textChars":20,"textLines":1,"bbox":[857.28,592.32,349.44,33.6]}
+{"kind":"textbox","id":"sh/2ts769o3","slide":8,"name":"Text 39","text":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textPreview":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textChars":39,"textLines":1,"bbox":[48,687.36,768,28.8]}
+{"kind":"textbox","id":"sh/pwjqho7u","slide":8,"name":"Text 40","text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1190.4,687.36,48,28.8]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"[데이터·학습 전략 용어 설명]\nHybrid Loss (BCEWithLogitsLoss 50% + DiceLoss 50%): 조류 영역이 이미지 전체의 1~3%밖에 안 되는 극심한 클래스 불균형 문제 때문에, 일반적인 손실 함수(BCE) 하나만 쓰면 AI가 '그냥 다 배경이라고 찍는' 쪽으로 게을러질 수 있습니다. DiceLoss를 함께 써서 '작더라도 조류 영역을 놓치면 크게 벌점'을 주는 방식으로 보완했습니다.\nTrain 866장(70%) / Val 248장(20%) / Test 124장(10%): 전체 1,238장을 학습용/검증용/최종평가용으로 나눈 것입니다. 특히 '이미지 레벨'로 나눴다는 것은, 같은 장면(같은 카메라·같은 순간)이 Train과 Test에 동시에 섞여 들어가는 것을 막았다는 뜻입니다(Data Leakage 방지) — 왜 이 구분이 성능 지표의 신뢰도에 중요한지는 10번 슬라이드에서 이어집니다.\nAdamW / CosineAnnealingLR: 각각 '모델 가중치를 업데이트하는 최적화 알고리즘'과 '학습이 진행될수록 학습 속도(lr)를 서서히 줄여 안정적으로 수렴시키는 스케줄'입니다.\n증강 기법(ColorJitter, GaussianBlur 등): 실제 촬영 환경에서 발생하는 빛 반사, 흐릿함, 안개, 저각도 CCTV 앵글 등을 인위적으로 재현해 학습 데이터를 늘리고, 다양한 현장 조건에 강건하게 만드는 기법입니다.\n"}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"PERFORMANCE RESULTS","textShapes":20}
+{"kind":"textbox","id":"sh/1cfmhgne","slide":9,"name":"Text 0","text":"PERFORMANCE RESULTS","textPreview":"PERFORMANCE RESULTS","textChars":19,"textLines":1,"bbox":[57.6,40.32,768,30.72]}
+{"kind":"textbox","id":"sh/0b65obm9","slide":9,"name":"Text 1","text":"최종 성능 지표","textPreview":"최종 성능 지표","textChars":8,"textLines":1,"bbox":[57.6,69.12,1132.8,76.8]}
+{"kind":"textbox","id":"sh/nex4jq5k","slide":9,"name":"Text 2","text":"Full Resolution 전환과 모델 최적화를 거쳐 검증된 최종 시스템 성능","textPreview":"Full Resolution 전환과 모델 최적화를 거쳐 검증된 최종 시스템 성능","textChars":44,"textLines":1,"bbox":[57.6,144,1132.8,38.4]}
+{"kind":"shape","id":"sh/mdonql4z","slide":9,"name":"Shape 3","bbox":[57.6,235.2,274.56,211.2]}
+{"kind":"textbox","id":"sh/9gzml0nq","slide":9,"name":"Text 4","text":"0.770","textPreview":"0.770","textChars":5,"textLines":1,"bbox":[76.8,265.92,236.16,72]}
+{"kind":"textbox","id":"sh/ofq5svm5","slide":9,"name":"Text 5","text":"Test mIoU","textPreview":"Test mIoU","textChars":9,"textLines":1,"bbox":[76.8,345.6,236.16,33.6]}
+{"kind":"textbox","id":"sh/bih4na5w","slide":9,"name":"Text 6","text":"0518/0519 최신 데이터 기준, key_remap.py 검증 재현","textPreview":"0518/0519 최신 데이터 기준, key_remap.py 검증 재현","textChars":39,"textLines":1,"bbox":[76.8,384,236.16,52.8]}
+{"kind":"shape","id":"sh/ah8nu54b","slide":9,"name":"Shape 7","bbox":[356.16,235.2,274.56,211.2]}
+{"kind":"textbox","id":"sh/oza1gfyh","slide":9,"name":"Text 8","text":"646ms","textPreview":"646ms","textChars":5,"textLines":1,"bbox":[375.36,265.92,236.16,72]}
+{"kind":"textbox","id":"sh/p0ji9kf2","slide":9,"name":"Text 9","text":"평균 추론 지연","textPreview":"평균 추론 지연","textChars":8,"textLines":1,"bbox":[375.36,345.6,236.16,33.6]}
+{"kind":"textbox","id":"sh/2xsjepgb","slide":9,"name":"Text 10","text":"Tiling 대비 2.3배 개선","textPreview":"Tiling 대비 2.3배 개선","textChars":17,"textLines":1,"bbox":[375.36,384,236.16,52.8]}
+{"kind":"shape","id":"sh/3y107axw","slide":9,"name":"Shape 11","bbox":[654.72,235.2,274.56,211.2]}
+{"kind":"textbox","id":"sh/cnu1kzyd","slide":9,"name":"Text 12","text":"6.33GB","textPreview":"6.33GB","textChars":6,"textLines":1,"bbox":[673.92,265.92,236.16,72]}
+{"kind":"textbox","id":"sh/do3id4fy","slide":9,"name":"Text 13","text":"최대 VRAM 사용량","textPreview":"최대 VRAM 사용량","textChars":11,"textLines":1,"bbox":[673.92,345.6,236.16,33.6]}
+{"kind":"textbox","id":"sh/qlcjipgn","slide":9,"name":"Text 14","text":"RTX A5000 24GB 中 안정적 여유","textPreview":"RTX A5000 24GB 中 안정적 여유","textChars":23,"textLines":1,"bbox":[673.92,384,236.16,52.8]}
+{"kind":"shape","id":"sh/bml0buxs","slide":9,"name":"Shape 15","bbox":[953.28,235.2,274.56,211.2]}
+{"kind":"textbox","id":"sh/0ru1ozyp","slide":9,"name":"Text 16","text":"30초","textPreview":"30초","textChars":3,"textLines":1,"bbox":[972.48,265.92,236.16,72]}
+{"kind":"textbox","id":"sh/lsn2h4fa","slide":9,"name":"Text 17","text":"DB 폴링 주기","textPreview":"DB 폴링 주기","textChars":8,"textLines":1,"bbox":[972.48,345.6,236.16,33.6]}
+{"kind":"textbox","id":"sh/98ji147e","slide":9,"name":"Text 18","text":"CCTV 추가/삭제 실시간 반영","textPreview":"CCTV 추가/삭제 실시간 반영","textChars":17,"textLines":1,"bbox":[972.48,384,236.16,52.8]}
+{"kind":"textbox","id":"sh/87a18zqt","slide":9,"name":"Text 19","text":"평가 방식","textPreview":"평가 방식","textChars":5,"textLines":1,"bbox":[57.6,480,384,33.6]}
+{"kind":"textbox","id":"sh/76h0zup8","slide":9,"name":"Text 20","text":"IoU(Jaccard Index), F1-Score, Pixel Accuracy를 최신 데이터(0518/0519 촬영분)에 대해 산출 — 검증셋 대비 테스트셋 일반화 격차(Domain Shift)를 지속 모니터링","textPreview":"IoU(Jaccard Index), F1-Score, Pixel Accuracy를 최신 데이터(0518/0519 촬영분)에 대해 산출 — 검증셋 대비 테스트셋 일반화 격차(Domain Shift)를 지속 모니터링","textChars":118,"textLines":1,"bbox":[57.6,518.4,1142.4,57.6]}
+{"kind":"shape","id":"sh/ml8j6p8n","slide":9,"name":"Shape 21","bbox":[57.6,590.4,1164.48,0]}
+{"kind":"textbox","id":"sh/hcji5o7a","slide":9,"name":"Text 22","text":"F1-Score(중요도 上) · Pixel Accuracy(클래스 불균형으로 과신 경향 有, 참고 지표)","textPreview":"F1-Score(중요도 上) · Pixel Accuracy(클래스 불균형으로 과신 경향 有, 참고 지표)","textChars":58,"textLines":1,"bbox":[57.6,604.8,1142.4,38.4]}
+{"kind":"textbox","id":"sh/wba1cjqp","slide":9,"name":"Text 23","text":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textPreview":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textChars":39,"textLines":1,"bbox":[48,687.36,768,28.8]}
+{"kind":"textbox","id":"sh/va103ep4","slide":9,"name":"Text 24","text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1190.4,687.36,48,28.8]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"[이 슬라이드의 숫자 읽는 법]\nTest mIoU 0.770이 무엇이고 왜 'Test' 세트로 측정했는지에 대한 자세한 설명은 바로 다음 10번 슬라이드에서 별도로 다룹니다.\n평가 방식에 나오는 F1-Score와 Pixel Accuracy는 mIoU를 보완하는 참고 지표입니다. 특히 Pixel Accuracy는 조류 영역이 워낙 작다 보니(1~3%) '전부 배경이라고 찍어도 90%대 후반'이 나올 수 있어 과신하면 안 되는 지표라는 점을 슬라이드에도 명시했습니다 — F1-Score를 더 중요하게 봐야 합니다.\nDomain Shift(검증셋 대비 테스트셋 일반화 격차): 학습·검증에 쓰지 않은 최신 데이터(0518/0519 촬영분)에서도 성능이 유지되는지를 지속적으로 확인하고 있다는 의미로, 계절·조도 변화 등 실제 현장 변수에 대한 안전장치입니다.\n"}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"PERFORMANCE METRIC","textShapes":14}
+{"kind":"textbox","id":"sh/xc3mho32","slide":10,"name":"Text 0","text":"PERFORMANCE METRIC","textPreview":"PERFORMANCE METRIC","textChars":18,"textLines":1,"bbox":[57.6,40.32,768,30.72]}
+{"kind":"textbox","id":"sh/cbu58j2h","slide":10,"name":"Text 1","text":"Test mIoU, 왜 이 지표로 성능을 검증했나","textPreview":"Test mIoU, 왜 이 지표로 성능을 검증했나","textChars":27,"textLines":1,"bbox":[57.6,69.12,1132.8,76.8]}
+{"kind":"textbox","id":"sh/zelojyl8","slide":10,"name":"Text 2","text":"AI가 찾아낸 조류 영역이 정답과 얼마나 겹치는지를 수치화한 지표 — 모델이 한 번도 보지 않은 데이터로 채점","textPreview":"AI가 찾아낸 조류 영역이 정답과 얼마나 겹치는지를 수치화한 지표 — 모델이 한 번도 보지 않은 데이터로 채점","textChars":61,"textLines":1,"bbox":[57.6,144,1132.8,38.4]}
+{"kind":"shape","id":"sh/ydcnatkn","slide":10,"name":"Shape 3","bbox":[57.6,201.6,772.8,427.2]}
+{"kind":"shape","id":"sh/kzu5c32t","slide":10,"name":"Shape 4","bbox":[854.4,201.6,367.68,427.2]}
+{"kind":"textbox","id":"sh/725onyl4","slide":10,"name":"Text 5","text":"핵심 포인트","textPreview":"핵심 포인트","textChars":6,"textLines":1,"bbox":[879.36,220.8,317.76,33.6]}
+{"kind":"shape","id":"sh/m1cnetkj","slide":10,"name":"Shape 6","bbox":[879.36,279.36,9.6,9.6]}
+{"kind":"textbox","id":"sh/s7yt4b21","slide":10,"name":"Text 7","text":"mIoU란?","textPreview":"mIoU란?","textChars":6,"textLines":1,"bbox":[900.48,270.72,296.64,28.8]}
+{"kind":"textbox","id":"sh/d87uxg3m","slide":10,"name":"Text 8","text":"정답 영역과 AI 예측 영역이 겹치는 정도를 나타낸 정확도 지표(0~1)","textPreview":"정답 영역과 AI 예측 영역이 겹치는 정도를 나타낸 정확도 지표(0~1)","textChars":40,"textLines":1,"bbox":[900.48,299.52,296.64,62.4]}
+{"kind":"shape","id":"sh/q5gb21kb","slide":10,"name":"Shape 9","bbox":[879.36,377.28,9.6,9.6]}
+{"kind":"textbox","id":"sh/r6pcv6lw","slide":10,"name":"Text 10","text":"왜 \"Test\" 데이터인가","textPreview":"왜 \"Test\" 데이터인가","textChars":14,"textLines":1,"bbox":[900.48,368.64,296.64,28.8]}
+{"kind":"textbox","id":"sh/0bit8b2d","slide":10,"name":"Text 11","text":"학습에 쓰지 않은 데이터로 채점 → 실제 현장 배포 시 기대 성능을 정직하게 보여줌","textPreview":"학습에 쓰지 않은 데이터로 채점 → 실제 현장 배포 시 기대 성능을 정직하게 보여줌","textChars":46,"textLines":1,"bbox":[900.48,397.44,296.64,62.4]}
+{"kind":"shape","id":"sh/1cru1g3y","slide":10,"name":"Shape 12","bbox":[879.36,475.2,9.6,9.6]}
+{"kind":"textbox","id":"sh/e9gb61k7","slide":10,"name":"Text 13","text":"0.770의 의미","textPreview":"0.770의 의미","textChars":9,"textLines":1,"bbox":[900.48,466.56,296.64,28.8]}
+{"kind":"textbox","id":"sh/fapcz6ls","slide":10,"name":"Text 14","text":"조류 영역의 약 77%를 정확히 검출 (0518/0519 최신 데이터로 검증 재현)","textPreview":"조류 영역의 약 77%를 정확히 검출 (0518/0519 최신 데이터로 검증 재현)","textChars":46,"textLines":1,"bbox":[900.48,495.36,296.64,62.4]}
+{"kind":"shape","id":"sh/ozitcv29","slide":10,"name":"Shape 15","bbox":[879.36,572.16,317.76,0]}
+{"kind":"shape","id":"sh/p0ru503u","slide":10,"name":"Shape 16","bbox":[873.6,591.36,329.28,100.8]}
+{"kind":"textbox","id":"sh/xwnupgvy","slide":10,"name":"Text 17","text":"핵심 → 정직한 성능 지표","textPreview":"핵심 → 정직한 성능 지표","textChars":14,"textLines":1,"bbox":[892.8,600.96,290.88,28.8]}
+{"kind":"textbox","id":"sh/wvetgbud","slide":10,"name":"Text 18","text":"Test 데이터는 모델이 한 번도 본 적 없는 데이터라, 실전 배포 시 기대할 수 있는 성능에 가장 가까운 숫자입니다","textPreview":"Test 데이터는 모델이 한 번도 본 적 없는 데이터라, 실전 배포 시 기대할 수 있는 성능에 가장 가까운 숫자입니다","textChars":65,"textLines":1,"bbox":[892.8,627.84,290.88,57.6]}
+{"kind":"textbox","id":"sh/bu5cnqd8","slide":10,"name":"Text 19","text":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textPreview":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textChars":39,"textLines":1,"bbox":[48,687.36,768,28.8]}
+{"kind":"textbox","id":"sh/atwbelcn","slide":10,"name":"Text 20","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1190.4,687.36,48,28.8]}
+{"kind":"image","id":"im/u5obql8f","slide":10,"name":"Image 0","bbox":[72,216,744,398.4]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"[IoU / mIoU 계산 방식 – 상세]\nIoU(Intersection over Union) = 예측 마스크와 정답 마스크의 교집합 픽셀 수 ÷ 합집합 픽셀 수. 이미지 1장마다 0~1 사이 값이 나옵니다.\nmIoU(mean IoU) = 여러 이미지(또는 여러 클래스: 조류/배경)의 IoU를 평균낸 값. 저희 시스템은 \"조류 영역\"이 이미지 전체의 1~3%밖에 되지 않는 극단적 클래스 불균형이 있어(8번 슬라이드 Hybrid Loss 참고), 단순 정확도(Pixel Accuracy)만 보면 \"다 배경이라고 찍어도 97% 정확도\"처럼 착시가 생깁니다. mIoU는 이런 착시 없이 \"조류를 얼마나 정확히 찾아냈는가\"를 직접 반영하는 지표라 채택했습니다.\n[왜 하필 \"Test\" mIoU인가]\n8번 슬라이드에서 전체 1,238장을 Train 866장(70%)·Val 248장(20%)·Test 124장(10%)으로 나눴습니다. Train은 학습에 직접 사용, Val은 학습 중간에 하이퍼파라미터·조기종료 판단에 사용되므로 모델이 \"간접적으로\" 이 데이터에 최적화됩니다. Test 세트는 최종 모델이 한 번도 보지 않은 데이터라서, 실제 현장 CCTV에 배포했을 때 기대할 수 있는 성능과 가장 가깝습니다. 즉 Train/Val mIoU는 \"얼마나 잘 외웠는가\"에 가깝고, Test mIoU는 \"실전에서 얼마나 잘하는가\"를 보여주는 숫자입니다.\n이미지 레벨로 Train/Val/Test를 분리했기 때문에(같은 장면이 여러 세트에 섞이는 Data Leakage 방지), Test mIoU가 실제보다 부풀려질 가능성도 낮췄습니다.\n[0.770이라는 숫자의 의미]\n0518/0519 최신 촬영분 기준, Test 124장에 대해 key_remap.py로 가중치 정합성을 재검증한 뒤 재현한 수치입니다(11번 슬라이드 이슈 #2 참고). 시맨틱 세그멘테이션 분야에서는 통상 mIoU 0.5 이상이면 실사용 가능한 수준으로 보고, 0.7대는 상용 서비스 품질로 평가되는 편입니다. 다만 조류처럼 경계가 흐릿한 대상은 라벨러 간에도 판정이 갈릴 수 있어, 100%에 가까운 수치를 목표로 삼기보다 오탐/미탐 실사용 지표(9번 슬라이드 F1-Score, Pixel Accuracy)와 함께 보는 것이 안전합니다.\n참고: 6번 슬라이드의 \"+0.0286 상승\"은 이 0.770과는 다른 수치입니다 — Phase 2 전환 시점(타일링 vs Full Resolution) 벤치마크에서의 부분 비교값이며, 최종 확정 성능은 이 슬라이드의 0.770입니다.\n"}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"ENGINEERING RIGOR","textShapes":29}
+{"kind":"textbox","id":"sh/xcryxg7y","slide":11,"name":"Text 0","text":"ENGINEERING RIGOR","textPreview":"ENGINEERING RIGOR","textChars":17,"textLines":1,"bbox":[57.6,40.32,768,30.72]}
+{"kind":"textbox","id":"sh/wbih4b6d","slide":11,"name":"Text 1","text":"기술적 난제와 검증된 해결 과정","textPreview":"기술적 난제와 검증된 해결 과정","textChars":17,"textLines":1,"bbox":[57.6,69.12,1132.8,76.8]}
+{"kind":"textbox","id":"sh/n69grmpw","slide":11,"name":"Text 2","text":"발생 현상 → 근본 원인 분석 → 정량적 해결책, 3단계 진단 프로세스로 총 12건의 이슈를 해결","textPreview":"발생 현상 → 근본 원인 분석 → 정량적 해결책, 3단계 진단 프로세스로 총 12건의 이슈를 해결","textChars":54,"textLines":1,"bbox":[57.6,144,1132.8,38.4]}
+{"kind":"shape","id":"sh/250zy18b","slide":11,"name":"Shape 3","bbox":[57.6,225.6,370.56,374.4]}
+{"kind":"textbox","id":"sh/98rytw72","slide":11,"name":"Text 4","text":"2026-06-10","textPreview":"2026-06-10","textChars":10,"textLines":1,"bbox":[82.56,244.8,322.56,26.88]}
+{"kind":"textbox","id":"sh/o7ih0r6h","slide":11,"name":"Text 5","text":"OOM-Killer 강제 종료","textPreview":"OOM-Killer 강제 종료","textChars":16,"textLines":1,"bbox":[82.56,273.6,322.56,52.8]}
+{"kind":"shape","id":"sh/72t03qp0","slide":11,"name":"Shape 6","bbox":[82.56,331.2,320.64,0]}
+{"kind":"textbox","id":"sh/61kzalof","slide":11,"name":"Text 7","text":"현상","textPreview":"현상","textChars":2,"textLines":1,"bbox":[82.56,342.72,96,26.88]}
+{"kind":"textbox","id":"sh/ofqtgnyt","slide":11,"name":"Text 8","text":"python3 프로세스 15GB RAM 점유 후 OS 강제 종료","textPreview":"python3 프로세스 15GB RAM 점유 후 OS 강제 종료","textChars":35,"textLines":1,"bbox":[82.56,367.68,320.64,57.6]}
+{"kind":"textbox","id":"sh/9gza9sze","slide":11,"name":"Text 9","text":"원인","textPreview":"원인","textChars":2,"textLines":1,"bbox":[82.56,427.2,96,26.88]}
+{"kind":"textbox","id":"sh/mdobedg3","slide":11,"name":"Text 10","text":"dmesg 로그 분석: 스트림 재연결 시 큐가 무제한으로 누적","textPreview":"dmesg 로그 분석: 스트림 재연결 시 큐가 무제한으로 누적","textChars":34,"textLines":1,"bbox":[82.56,452.16,320.64,57.6]}
+{"kind":"shape","id":"sh/nehs7iho","slide":11,"name":"Shape 11","bbox":[76.8,513.6,332.16,72]}
+{"kind":"textbox","id":"sh/0b6tc3yx","slide":11,"name":"Text 12","text":"해결","textPreview":"해결","textChars":2,"textLines":1,"bbox":[92.16,519.36,96,23.04]}
+{"kind":"textbox","id":"sh/1cfa58zi","slide":11,"name":"Text 13","text":"BatchScheduler에 Skip-to-Latest 전략 + Hard Cap 적용","textPreview":"BatchScheduler에 Skip-to-Latest 전략 + Hard Cap 적용","textChars":47,"textLines":1,"bbox":[92.16,540.48,301.44,42.24]}
+{"kind":"shape","id":"sh/epobatgr","slide":11,"name":"Shape 14","bbox":[455.04,225.6,370.56,374.4]}
+{"kind":"textbox","id":"sh/zaxs3yhc","slide":11,"name":"Text 15","text":"2026-06-10","textPreview":"2026-06-10","textChars":10,"textLines":1,"bbox":[480,244.8,322.56,26.88]}
+{"kind":"textbox","id":"sh/cn6t83y1","slide":11,"name":"Text 16","text":"모델 웨이트 정합성 오류","textPreview":"모델 웨이트 정합성 오류","textChars":13,"textLines":1,"bbox":[480,273.6,322.56,52.8]}
+{"kind":"shape","id":"sh/dofa18z6","slide":11,"name":"Shape 17","bbox":[480,331.2,320.64,0]}
+{"kind":"textbox","id":"sh/tsnip0ny","slide":11,"name":"Text 18","text":"현상","textPreview":"현상","textChars":2,"textLines":1,"bbox":[480,342.72,96,26.88]}
+{"kind":"textbox","id":"sh/87ehgv6d","slide":11,"name":"Text 19","text":"웨이트 리맵핑 실패로 모델이 무작위 초기값으로 동작","textPreview":"웨이트 리맵핑 실패로 모델이 무작위 초기값으로 동작","textChars":28,"textLines":1,"bbox":[480,367.68,320.64,57.6]}
+{"kind":"textbox","id":"sh/7650nq5s","slide":11,"name":"Text 20","text":"원인","textPreview":"원인","textChars":2,"textLines":1,"bbox":[480,427.2,96,26.88]}
+{"kind":"textbox","id":"sh/65wzelo7","slide":11,"name":"Text 21","text":"transformers 라이브러리 버전 불일치 (445개 키 불일치)","textPreview":"transformers 라이브러리 버전 불일치 (445개 키 불일치)","textChars":38,"textLines":1,"bbox":[480,452.16,320.64,57.6]}
+{"kind":"shape","id":"sh/l43ilgn2","slide":11,"name":"Shape 22","bbox":[474.24,513.6,332.16,72]}
+{"kind":"textbox","id":"sh/k3uhcb6h","slide":11,"name":"Text 23","text":"해결","textPreview":"해결","textChars":2,"textLines":1,"bbox":[489.6,519.36,96,23.04]}
+{"kind":"textbox","id":"sh/j2lgjq5w","slide":11,"name":"Text 24","text":"key_remap.py 리맵핑 + verify_load.py로 무결성 검증, mIoU 0.770 재현","textPreview":"key_remap.py 리맵핑 + verify_load.py로 무결성 검증, mIoU 0.770 재현","textChars":56,"textLines":1,"bbox":[489.6,540.48,301.44,42.24]}
+{"kind":"shape","id":"sh/y1czalob","slide":11,"name":"Shape 25","bbox":[852.48,225.6,370.56,374.4]}
+{"kind":"textbox","id":"sh/p07ixkn6","slide":11,"name":"Text 26","text":"2026-06-15","textPreview":"2026-06-15","textChars":10,"textLines":1,"bbox":[877.44,244.8,322.56,26.88]}
+{"kind":"textbox","id":"sh/4zyhofml","slide":11,"name":"Text 27","text":"타일링 스티칭 아티팩트","textPreview":"타일링 스티칭 아티팩트","textChars":12,"textLines":1,"bbox":[877.44,273.6,322.56,52.8]}
+{"kind":"shape","id":"sh/m58fih43","slide":11,"name":"Shape 28","bbox":[877.44,331.2,320.64,0]}
+{"kind":"textbox","id":"sh/n61wbmlo","slide":11,"name":"Text 29","text":"현상","textPreview":"현상","textChars":2,"textLines":1,"bbox":[877.44,342.72,96,26.88]}
+{"kind":"textbox","id":"sh/o7axk7m9","slide":11,"name":"Text 30","text":"타일 경계에서 예측 불연속, GPU 커널 호출 오버헤드 과다","textPreview":"타일 경계에서 예측 불연속, GPU 커널 호출 오버헤드 과다","textChars":33,"textLines":1,"bbox":[877.44,367.68,320.64,57.6]}
+{"kind":"textbox","id":"sh/98jedc3u","slide":11,"name":"Text 31","text":"원인","textPreview":"원인","textChars":2,"textLines":1,"bbox":[877.44,427.2,96,26.88]}
+{"kind":"textbox","id":"sh/eh8fex47","slide":11,"name":"Text 32","text":"1080p 처리 시 수십 개 타일 생성 → 반복 호출·중복 연산","textPreview":"1080p 처리 시 수십 개 타일 생성 → 반복 호출·중복 연산","textChars":35,"textLines":1,"bbox":[877.44,452.16,320.64,57.6]}
+{"kind":"shape","id":"sh/z2hw72lc","slide":11,"name":"Shape 33","bbox":[871.68,513.6,332.16,72]}
+{"kind":"textbox","id":"sh/03qxg7mx","slide":11,"name":"Text 34","text":"해결","textPreview":"해결","textChars":2,"textLines":1,"bbox":[887.04,519.36,96,23.04]}
+{"kind":"textbox","id":"sh/14ze9c3i","slide":11,"name":"Text 35","text":"Full Resolution 단일 추론 전환으로 완전 제거 (Latency 2.3배 개선)","textPreview":"Full Resolution 단일 추론 전환으로 완전 제거 (Latency 2.3배 개선)","textChars":50,"textLines":1,"bbox":[887.04,540.48,301.44,42.24]}
+{"kind":"textbox","id":"sh/ydcfq1kb","slide":11,"name":"Text 36","text":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textPreview":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textChars":39,"textLines":1,"bbox":[48,687.36,768,28.8]}
+{"kind":"textbox","id":"sh/jylwj6lw","slide":11,"name":"Text 37","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1190.4,687.36,48,28.8]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":"[3단계 진단 프로세스 – 이슈 상세]\nOOM-Killer 강제 종료: OOM은 'Out Of Memory'(메모리 부족)의 줄임말로, 리눅스 운영체제가 메모리를 다 써버린 프로세스를 강제로 죽이는 안전장치입니다. dmesg(시스템 로그)를 분석해 'CCTV 스트림이 끊겼다 재연결될 때마다 처리 대기열이 무한정 쌓이는' 원인을 찾았고, Skip-to-Latest 전략과 대기열 상한(Hard Cap)을 적용해 해결했습니다.\n모델 웨이트 정합성 오류: '웨이트'는 AI 모델이 학습한 지식 자체(가중치 파일)입니다. 라이브러리(transformers) 버전이 바뀌면서 저장된 웨이트의 이름표(키) 445개가 새 버전과 맞지 않아, 모델이 학습된 지식 없이 무작위 초기 상태로 동작하는 심각한 버그였습니다. key_remap.py로 이름표를 새로 맞추고, verify_load.py로 '제대로 로드됐는지' 자동 검증하는 절차를 만들어 재발을 방지했습니다 — 이 검증 스크립트가 9·10번 슬라이드의 mIoU 0.770을 재현하는 데도 그대로 쓰였습니다.\n타일링 스티칭 아티팩트: 6번 슬라이드에서 설명한 타일링 문제의 근본 원인 분석 버전입니다. 조각을 반복 호출하는 구조 자체가 문제였기에, 임시 땜질이 아니라 Full Resolution 전환이라는 구조적 해결책을 택했습니다.\n"}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"REFACTORING","textShapes":23}
+{"kind":"textbox","id":"sh/1gbm9s3a","slide":12,"name":"Text 0","text":"REFACTORING","textPreview":"REFACTORING","textChars":11,"textLines":1,"bbox":[57.6,40.32,768,30.72]}
+{"kind":"textbox","id":"sh/0f2lgnmp","slide":12,"name":"Text 1","text":"모듈형 아키텍처로의 전환","textPreview":"모듈형 아키텍처로의 전환","textChars":13,"textLines":1,"bbox":[57.6,69.12,1132.8,76.8]}
+{"kind":"textbox","id":"sh/ra943il8","slide":12,"name":"Text 2","text":"단일 실행 스크립트에서, 단방향 의존성을 갖는 계층형 서버 구조로 재설계","textPreview":"단일 실행 스크립트에서, 단방향 의존성을 갖는 계층형 서버 구조로 재설계","textChars":40,"textLines":1,"bbox":[57.6,144,1132.8,38.4]}
+{"kind":"shape","id":"sh/q903ad4n","slide":12,"name":"Shape 3","bbox":[57.6,225.6,1164.48,59.52]}
+{"kind":"textbox","id":"sh/dcbm583y","slide":12,"name":"Text 4","text":"common / utils","textPreview":"common / utils","textChars":14,"textLines":1,"bbox":[81.6,225.6,249.6,59.52]}
+{"kind":"textbox","id":"sh/sb2lcnmd","slide":12,"name":"Text 5","text":"공용 유틸리티, 로깅, 상수","textPreview":"공용 유틸리티, 로깅, 상수","textChars":15,"textLines":1,"bbox":[345.6,225.6,857.28,59.52]}
+{"kind":"textbox","id":"sh/b6d4f2lc","slide":12,"name":"Text 6","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[96,285.12,38.4,11.52]}
+{"kind":"shape","id":"sh/a543mx4r","slide":12,"name":"Shape 7","bbox":[57.6,296.64,1030.08,59.52]}
+{"kind":"textbox","id":"sh/wvupgz6t","slide":12,"name":"Text 8","text":"inference","textPreview":"inference","textChars":9,"textLines":1,"bbox":[81.6,296.64,249.6,59.52]}
+{"kind":"textbox","id":"sh/xw3q94ne","slide":12,"name":"Text 9","text":"OneFormer 추론 엔진 · 후처리","textPreview":"OneFormer 추론 엔진 · 후처리","textChars":21,"textLines":1,"bbox":[345.6,296.64,722.88,59.52]}
+{"kind":"textbox","id":"sh/atc7epon","slide":12,"name":"Text 10","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[96,356.16,38.4,11.52]}
+{"kind":"shape","id":"sh/bulo7u58","slide":12,"name":"Shape 11","bbox":[57.6,367.68,895.68,59.52]}
+{"kind":"textbox","id":"sh/orapcf6h","slide":12,"name":"Text 12","text":"ingestion","textPreview":"ingestion","textChars":9,"textLines":1,"bbox":[81.6,367.68,249.6,59.52]}
+{"kind":"textbox","id":"sh/9sj65kn2","slide":12,"name":"Text 13","text":"RTSP 스트림 관리 · 수집","textPreview":"RTSP 스트림 관리 · 수집","textChars":16,"textLines":1,"bbox":[345.6,367.68,588.48,59.52]}
+{"kind":"textbox","id":"sh/mps7a5or","slide":12,"name":"Text 14","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[96,427.2,38.4,11.52]}
+{"kind":"shape","id":"sh/nq1o3a5w","slide":12,"name":"Shape 15","bbox":[57.6,438.72,761.28,59.52]}
+{"kind":"textbox","id":"sh/0nap8f6l","slide":12,"name":"Text 16","text":"output","textPreview":"output","textChars":6,"textLines":1,"bbox":[81.6,438.72,249.6,59.52]}
+{"kind":"textbox","id":"sh/1oj61kn6","slide":12,"name":"Text 17","text":"HLS · MJPEG 웹 서버","textPreview":"HLS · MJPEG 웹 서버","textChars":16,"textLines":1,"bbox":[345.6,438.72,454.08,59.52]}
+{"kind":"textbox","id":"sh/hkbm5wzu","slide":12,"name":"Text 18","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[96,498.24,38.4,11.52]}
+{"kind":"shape","id":"sh/gj25cry9","slide":12,"name":"Shape 19","bbox":[57.6,509.76,626.88,59.52]}
+{"kind":"textbox","id":"sh/fit436ho","slide":12,"name":"Text 20","text":"events","textPreview":"events","textChars":6,"textLines":1,"bbox":[81.6,509.76,249.6,59.52]}
+{"kind":"textbox","id":"sh/uh0na1g3","slide":12,"name":"Text 21","text":"이벤트 판정 · 외부 API 연동","textPreview":"이벤트 판정 · 외부 API 연동","textChars":18,"textLines":1,"bbox":[345.6,509.76,319.68,59.52]}
+{"kind":"textbox","id":"sh/tgrm1wzy","slide":12,"name":"Text 22","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[96,569.28,38.4,11.52]}
+{"kind":"shape","id":"sh/sfi58ryd","slide":12,"name":"Shape 23","bbox":[57.6,580.8,492.48,59.52]}
+{"kind":"textbox","id":"sh/7u94zmhs","slide":12,"name":"Text 24","text":"core","textPreview":"core","textChars":4,"textLines":1,"bbox":[81.6,580.8,249.6,59.52]}
+{"kind":"textbox","id":"sh/6t0n6hg7","slide":12,"name":"Text 25","text":"TovnetSegServer 오케스트레이터","textPreview":"TovnetSegServer 오케스트레이터","textChars":23,"textLines":1,"bbox":[345.6,580.8,185.28,59.52]}
+{"kind":"textbox","id":"sh/dcv6dgz2","slide":12,"name":"Text 26","text":"common → utils → inference/ingestion/output → events → core   (단방향 의존성, 순환 참조 방지)","textPreview":"common → utils → inference/ingestion/output → events → core   (단방향 의존성, 순환 참조 방지)","textChars":81,"textLines":1,"bbox":[57.6,659.52,1164.48,33.6]}
+{"kind":"textbox","id":"sh/cbm5kbyh","slide":12,"name":"Text 27","text":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textPreview":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textChars":39,"textLines":1,"bbox":[48,687.36,768,28.8]}
+{"kind":"textbox","id":"sh/alwbitsn","slide":12,"name":"Text 28","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1190.4,687.36,48,28.8]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"[리팩터링 용어 설명]\n단방향 의존성: common/utils → inference/ingestion/output → events → core 순서로만 서로를 참조할 수 있게 규칙을 정했다는 뜻입니다. 예를 들어 inference 모듈은 utils를 가져다 쓸 수 있지만, utils가 거꾸로 inference를 가져다 쓰는 것은 금지됩니다. 이렇게 하면 한쪽을 고쳤을 때 연쇄적으로 다른 곳이 깨지는 '순환 참조' 문제를 원천 차단할 수 있습니다.\ncore의 TovnetSegServer: 앞의 모든 모듈(수집·추론·출력·이벤트)을 하나로 지휘하는 오케스트레이터(총괄 실행기) 역할을 하는 최상위 컴포넌트입니다.\n이 리팩터링 전에는 단일 실행 스크립트였다는 점이 핵심입니다 — 기능 하나를 고치려면 전체 코드를 다 이해해야 했지만, 지금은 담당 영역별로 나뉘어 있어 신규 인력 투입이나 유지보수가 훨씬 수월합니다.\n"}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"LIVE STATUS","textShapes":18}
+{"kind":"textbox","id":"sh/q50nydsj","slide":13,"name":"Text 0","text":"LIVE STATUS","textPreview":"LIVE STATUS","textChars":11,"textLines":1,"bbox":[57.6,40.32,768,30.72]}
+{"kind":"textbox","id":"sh/bq9orito","slide":13,"name":"Text 1","text":"현재 시스템 운영 현황","textPreview":"현재 시스템 운영 현황","textChars":12,"textLines":1,"bbox":[57.6,69.12,1132.8,76.8]}
+{"kind":"textbox","id":"sh/o3i5w3ad","slide":13,"name":"Text 2","text":"2026-07-12 기준, 모듈형 아키텍처 v2.0으로 안정적으로 가동 중","textPreview":"2026-07-12 기준, 모듈형 아키텍처 v2.0으로 안정적으로 가동 중","textChars":41,"textLines":1,"bbox":[57.6,144,1132.8,38.4]}
+{"kind":"shape","id":"sh/p4r6p8by","slide":13,"name":"Shape 3","bbox":[57.6,201.6,249.6,48]}
+{"kind":"shape","id":"sh/21gnuts7","slide":13,"name":"Shape 4","bbox":[78.72,221.76,9.6,9.6]}
+{"kind":"textbox","id":"sh/32ponyts","slide":13,"name":"Text 5","text":"정상 구동 중","textPreview":"정상 구동 중","textChars":7,"textLines":1,"bbox":[100.8,201.6,201.6,48]}
+{"kind":"shape","id":"sh/gzy5s3a1","slide":13,"name":"Shape 6","bbox":[57.6,273.6,1164.48,52.8]}
+{"kind":"textbox","id":"sh/1076lobm","slide":13,"name":"Text 7","text":"PID","textPreview":"PID","textChars":3,"textLines":1,"bbox":[81.6,273.6,220.8,52.8]}
+{"kind":"textbox","id":"sh/hcfy9k3u","slide":13,"name":"Text 8","text":"2404769 (정상 구동)","textPreview":"2404769 (정상 구동)","textChars":15,"textLines":1,"bbox":[316.8,273.6,883.2,52.8]}
+{"kind":"shape","id":"sh/gb6x0zm9","slide":13,"name":"Shape 9","bbox":[57.6,333.12,1164.48,52.8]}
+{"kind":"textbox","id":"sh/vaxg7ulo","slide":13,"name":"Text 10","text":"아키텍처","textPreview":"아키텍처","textChars":4,"textLines":1,"bbox":[81.6,333.12,220.8,52.8]}
+{"kind":"textbox","id":"sh/u9ofyp43","slide":13,"name":"Text 11","text":"모듈형 계층 구조 v2.0","textPreview":"모듈형 계층 구조 v2.0","textChars":14,"textLines":1,"bbox":[316.8,333.12,883.2,52.8]}
+{"kind":"shape","id":"sh/t8fy5k3i","slide":13,"name":"Shape 12","bbox":[57.6,392.64,1164.48,52.8]}
+{"kind":"textbox","id":"sh/876xwfmx","slide":13,"name":"Text 13","text":"추론 엔진","textPreview":"추론 엔진","textChars":5,"textLines":1,"bbox":[81.6,392.64,220.8,52.8]}
+{"kind":"textbox","id":"sh/7mdg3als","slide":13,"name":"Text 14","text":"OneFormer Swin-Large · Full Resolution (1920×1088)","textPreview":"OneFormer Swin-Large · Full Resolution (1920×1088)","textChars":50,"textLines":1,"bbox":[316.8,392.64,883.2,52.8]}
+{"kind":"shape","id":"sh/6l4fu547","slide":13,"name":"Shape 15","bbox":[57.6,452.16,1164.48,52.8]}
+{"kind":"textbox","id":"sh/lkvy103m","slide":13,"name":"Text 16","text":"DB 모니터링","textPreview":"DB 모니터링","textChars":7,"textLines":1,"bbox":[81.6,452.16,220.8,52.8]}
+{"kind":"textbox","id":"sh/kjmxsfm1","slide":13,"name":"Text 17","text":"30초 폴링 주기 · 동적 스트림 배포","textPreview":"30초 폴링 주기 · 동적 스트림 배포","textChars":21,"textLines":1,"bbox":[316.8,452.16,883.2,52.8]}
+{"kind":"shape","id":"sh/cnqh8fux","slide":13,"name":"Shape 18","bbox":[57.6,511.68,1164.48,52.8]}
+{"kind":"textbox","id":"sh/xozyhkbi","slide":13,"name":"Text 19","text":"활성화 정책","textPreview":"활성화 정책","textChars":6,"textLines":1,"bbox":[81.6,511.68,220.8,52.8]}
+{"kind":"textbox","id":"sh/q18f65cr","slide":13,"name":"Text 20","text":"첫 추론 결과 브로드캐스트 후 enabled=1 업데이트 (Deferred Activation)","textPreview":"첫 추론 결과 브로드캐스트 후 enabled=1 업데이트 (Deferred Activation)","textChars":53,"textLines":1,"bbox":[316.8,511.68,883.2,52.8]}
+{"kind":"shape","id":"sh/bmhgfatc","slide":13,"name":"Shape 21","bbox":[57.6,571.2,1164.48,52.8]}
+{"kind":"textbox","id":"sh/oz6x4vul","slide":13,"name":"Text 22","text":"문서화","textPreview":"문서화","textChars":3,"textLines":1,"bbox":[81.6,571.2,220.8,52.8]}
+{"kind":"textbox","id":"sh/p0zyd0b6","slide":13,"name":"Text 23","text":"ARCHITECTURE.md · DEVELOPER_GUIDE.md 최신화 완료","textPreview":"ARCHITECTURE.md · DEVELOPER_GUIDE.md 최신화 완료","textChars":43,"textLines":1,"bbox":[316.8,571.2,883.2,52.8]}
+{"kind":"textbox","id":"sh/2xof2lcv","slide":13,"name":"Text 24","text":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textPreview":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textChars":39,"textLines":1,"bbox":[48,687.36,768,28.8]}
+{"kind":"textbox","id":"sh/3yxgbqdg","slide":13,"name":"Text 25","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1190.4,687.36,48,28.8]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":"[운영 현황 용어 설명]\nPID 2404769: 리눅스에서 현재 실행 중인 프로세스에 부여되는 고유 번호입니다. 이 번호가 존재하고 계속 유지되고 있다는 것은 서버가 죽지 않고 안정적으로 돌아가고 있다는 가장 직접적인 증거입니다.\n활성화 정책(Deferred Activation): 새 카메라를 추가했을 때 곧바로 '정상'으로 표시하지 않고, 첫 추론 결과가 실제로 정상 송출된 것을 확인한 뒤에야 enabled=1로 바꿉니다. 즉 '연결은 됐는데 실제로는 작동 안 하는' 상태를 정상으로 오인하지 않도록 만든 안전장치입니다.\n문서화(ARCHITECTURE.md, DEVELOPER_GUIDE.md): 코드뿐 아니라 설계 문서도 최신 상태로 관리되고 있어, 향후 인력이 추가되거나 인수인계가 필요할 때 리스크가 낮다는 의미입니다.\n"}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"ROADMAP","textShapes":23}
+{"kind":"textbox","id":"sh/xc7eds76","slide":14,"name":"Text 0","text":"ROADMAP","textPreview":"ROADMAP","textChars":7,"textLines":1,"bbox":[57.6,40.32,768,30.72]}
+{"kind":"textbox","id":"sh/wbydknq1","slide":14,"name":"Text 1","text":"향후 개선 방향","textPreview":"향후 개선 방향","textChars":8,"textLines":1,"bbox":[57.6,69.12,1132.8,76.8]}
+{"kind":"shape","id":"sh/jepwf2pc","slide":14,"name":"Shape 2","bbox":[57.6,148.8,370.56,518.4]}
+{"kind":"shape","id":"sh/idgvmx8r","slide":14,"name":"Shape 3","bbox":[57.6,148.8,370.56,52.8]}
+{"kind":"shape","id":"sh/5grehs7i","slide":14,"name":"Shape 4","bbox":[57.6,148.8,370.56,4.8]}
+{"kind":"textbox","id":"sh/kfidonqx","slide":14,"name":"Text 5","text":"단기 (High Priority)","textPreview":"단기 (High Priority)","textChars":18,"textLines":1,"bbox":[80.64,148.8,324.48,52.8]}
+{"kind":"shape","id":"sh/zi5c3y98","slide":14,"name":"Shape 6","bbox":[80.64,226.56,8.64,8.64]}
+{"kind":"textbox","id":"sh/ehwvat8n","slide":14,"name":"Text 7","text":"TTA 적용","textPreview":"TTA 적용","textChars":6,"textLines":1,"bbox":[99.84,220.8,305.28,28.8]}
+{"kind":"textbox","id":"sh/c3e1gjyd","slide":14,"name":"Text 8","text":"mIoU +0.02~0.05, Latency 1.5~2배 증가 예상","textPreview":"mIoU +0.02~0.05, Latency 1.5~2배 증가 예상","textChars":37,"textLines":1,"bbox":[99.84,249.6,305.28,57.6]}
+{"kind":"shape","id":"sh/x4ni9ofy","slide":14,"name":"Shape 9","bbox":[80.64,327.36,8.64,8.64]}
+{"kind":"textbox","id":"sh/a1wze9g7","slide":14,"name":"Text 10","text":"Hard Example Mining","textPreview":"Hard Example Mining","textChars":19,"textLines":1,"bbox":[99.84,321.6,305.28,28.8]}
+{"kind":"textbox","id":"sh/b2507exs","slide":14,"name":"Text 11","text":"저조도·안개 등 취약 샘플 집중 학습","textPreview":"저조도·안개 등 취약 샘플 집중 학습","textChars":20,"textLines":1,"bbox":[99.84,350.4,305.28,57.6]}
+{"kind":"shape","id":"sh/kre1k3y9","slide":14,"name":"Shape 12","bbox":[80.64,428.16,8.64,8.64]}
+{"kind":"textbox","id":"sh/ls7idofu","slide":14,"name":"Text 13","text":"Dynamic Thresholding","textPreview":"Dynamic Thresholding","textChars":20,"textLines":1,"bbox":[99.84,422.4,305.28,28.8]}
+{"kind":"textbox","id":"sh/y5wjitgj","slide":14,"name":"Text 14","text":"이미지별 적응형 임계값으로 오탐 감소","textPreview":"이미지별 적응형 임계값으로 오탐 감소","textChars":20,"textLines":1,"bbox":[99.84,451.2,305.28,57.6]}
+{"kind":"shape","id":"sh/z650byxo","slide":14,"name":"Shape 15","bbox":[455.04,148.8,370.56,518.4]}
+{"kind":"shape","id":"sh/0buh8zy5","slide":14,"name":"Shape 16","bbox":[455.04,148.8,370.56,52.8]}
+{"kind":"shape","id":"sh/1w3i14fq","slide":14,"name":"Shape 17","bbox":[455.04,148.8,370.56,4.8]}
+{"kind":"textbox","id":"sh/hsvy50re","slide":14,"name":"Text 18","text":"중장기 (Medium Priority)","textPreview":"중장기 (Medium Priority)","textChars":21,"textLines":1,"bbox":[478.08,148.8,324.48,52.8]}
+{"kind":"shape","id":"sh/grmxwvqt","slide":14,"name":"Shape 19","bbox":[478.08,226.56,8.64,8.64]}
+{"kind":"textbox","id":"sh/fqdg3q98","slide":14,"name":"Text 20","text":"ONNX/TensorRT 배포","textPreview":"ONNX/TensorRT 배포","textChars":16,"textLines":1,"bbox":[497.28,220.8,305.28,28.8]}
+{"kind":"textbox","id":"sh/up4fal83","slide":14,"name":"Text 21","text":"PyTorch 런타임 없이 경량 추론","textPreview":"PyTorch 런타임 없이 경량 추론","textChars":20,"textLines":1,"bbox":[497.28,249.6,305.28,57.6]}
+{"kind":"shape","id":"sh/pwvy90rq","slide":14,"name":"Shape 22","bbox":[478.08,327.36,8.64,8.64]}
+{"kind":"textbox","id":"sh/4vmh0vq5","slide":14,"name":"Text 23","text":"Multi-Camera Fusion","textPreview":"Multi-Camera Fusion","textChars":19,"textLines":1,"bbox":[497.28,321.6,305.28,28.8]}
+{"kind":"textbox","id":"sh/3udg7q9k","slide":14,"name":"Text 24","text":"카메라 가림·결손 대응력 향상","textPreview":"카메라 가림·결손 대응력 향상","textChars":16,"textLines":1,"bbox":[497.28,350.4,305.28,57.6]}
+{"kind":"shape","id":"sh/2t4fyl8z","slide":14,"name":"Shape 25","bbox":[478.08,428.16,8.64,8.64]}
+{"kind":"textbox","id":"sh/d0fydk7m","slide":14,"name":"Text 26","text":"Temporal Consistency","textPreview":"Temporal Consistency","textChars":20,"textLines":1,"bbox":[497.28,422.4,305.28,28.8]}
+{"kind":"textbox","id":"sh/cz6h4fq1","slide":14,"name":"Text 27","text":"프레임 간 일관성 강제, flickering 감소","textPreview":"프레임 간 일관성 강제, flickering 감소","textChars":27,"textLines":1,"bbox":[497.28,451.2,305.28,57.6]}
+{"kind":"shape","id":"sh/atg3idk7","slide":14,"name":"Shape 28","bbox":[852.48,148.8,370.56,518.4]}
+{"kind":"shape","id":"sh/bup4rils","slide":14,"name":"Shape 29","bbox":[852.48,148.8,370.56,52.8]}
+{"kind":"shape","id":"sh/cvylkn2d","slide":14,"name":"Shape 30","bbox":[852.48,148.8,370.56,4.8]}
+{"kind":"textbox","id":"sh/xw7mts3y","slide":14,"name":"Text 31","text":"장기 (Exploration)","textPreview":"장기 (Exploration)","textChars":16,"textLines":1,"bbox":[875.52,148.8,324.48,52.8]}
+{"kind":"shape","id":"sh/yxgnmxkj","slide":14,"name":"Shape 32","bbox":[875.52,226.56,8.64,8.64]}
+{"kind":"textbox","id":"sh/jyp4fil4","slide":14,"name":"Text 33","text":"Self-Supervised Pretraining","textPreview":"Self-Supervised Pretraining","textChars":27,"textLines":1,"bbox":[894.72,220.8,305.28,28.8]}
+{"kind":"textbox","id":"sh/kzy5on2p","slide":14,"name":"Text 34","text":"소수 라벨로 높은 성능 달성","textPreview":"소수 라벨로 높은 성능 달성","textChars":15,"textLines":1,"bbox":[894.72,249.6,305.28,57.6]}
+{"kind":"shape","id":"sh/lkrmhsju","slide":14,"name":"Shape 35","bbox":[875.52,327.36,8.64,8.64]}
+{"kind":"textbox","id":"sh/6l0nqxkf","slide":14,"name":"Text 36","text":"Continual Learning","textPreview":"Continual Learning","textChars":18,"textLines":1,"bbox":[894.72,321.6,305.28,28.8]}
+{"kind":"textbox","id":"sh/7m94j210","slide":14,"name":"Text 37","text":"신규 카메라·계절 조건 점진 적응","textPreview":"신규 카메라·계절 조건 점진 적응","textChars":18,"textLines":1,"bbox":[894.72,350.4,305.28,57.6]}
+{"kind":"textbox","id":"sh/fi5432t4","slide":14,"name":"Text 38","text":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textPreview":"TOVNET-SEG  |  CCTV 기반 실시간 수면 조류 탐지 시스템","textChars":39,"textLines":1,"bbox":[48,687.36,768,28.8]}
+{"kind":"textbox","id":"sh/uhw3axcj","slide":14,"name":"Text 39","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1190.4,687.36,48,28.8]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":"[로드맵 용어 설명]\nTTA(Test-Time Augmentation): 같은 이미지를 여러 방식으로 살짝 변형해 여러 번 추론한 뒤 결과를 평균 내는 기법입니다. 정확도는 오르지만(mIoU +0.02~0.05) 그만큼 계산량이 늘어 속도는 느려집니다(1.5~2배).\nONNX/TensorRT 배포: 지금은 PyTorch라는 개발용 프레임워크 위에서 돌아가는데, 이를 배포 전용 경량 포맷(ONNX/TensorRT)으로 변환하면 더 가볍고 빠르게 실행할 수 있습니다. 다양한 하드웨어(엣지 디바이스 등)에 이식하기도 쉬워집니다.\nSelf-Supervised Pretraining: 사람이 일일이 라벨(정답)을 달지 않은 영상만으로도 AI가 스스로 패턴을 학습하게 하는 기법입니다. 라벨링 비용을 크게 줄이면서도 신규 현장 데이터에 빠르게 적응시킬 수 있습니다.\nHard Example Mining / Multi-Camera Fusion / Continual Learning: 각각 '틀리기 쉬운 어려운 사례를 집중 학습', '여러 카메라 정보를 합쳐 한 카메라가 가려져도 판단 가능하게', '신규 카메라·계절 변화에 모델을 계속 점진적으로 적응'시키는 방향입니다.\nDynamic Thresholding / Temporal Consistency: '이미지마다 알람 기준을 다르게 자동 조정해 오탐을 줄이는 것'과 '연속된 프레임 사이의 판정이 갑자기 튀지 않도록 일관성을 강제하는 것'입니다.\n"}
+{"kind":"slide","id":"sl/vaxsvy10","slide":15,"title":"감사합니다","textShapes":3}
+{"kind":"shape","id":"sh/547mhg3m","slide":15,"name":"Shape 0","bbox":[931.2,-153.6,624,624]}
+{"kind":"shape","id":"sh/k3y5ov21","slide":15,"name":"Shape 1","bbox":[-153.6,441.6,499.2,499.2]}
+{"kind":"textbox","id":"sh/76p4jqls","slide":15,"name":"Text 2","text":"감사합니다","textPreview":"감사합니다","textChars":5,"textLines":1,"bbox":[86.4,264,768,96]}
+{"kind":"textbox","id":"sh/65gnqlk7","slide":15,"name":"Text 3","text":"TOVNET-SEG는 Full Resolution 전환과 모듈형 아키텍처를 통해 실시간성과 정확도를 함께 확보했으며, 30초 폴링 기반 동적 제어 서버로 안정적으로 운영되고 있습니다.","textPreview":"TOVNET-SEG는 Full Resolution 전환과 모듈형 아키텍처를 통해 실시간성과 정확도를 함께 확보했으며, 30초 폴링 기반 동적 제어 서버로 안정적으로 운영되고 있습니다.","textChars":102,"textLines":1,"bbox":[86.4,360,912,86.4]}
+{"kind":"shape","id":"sh/t87ml0ji","slide":15,"name":"Shape 4","bbox":[86.4,465.6,307.2,0]}
+{"kind":"textbox","id":"sh/s7y5sv2x","slide":15,"name":"Text 5","text":"Q & A","textPreview":"Q & A","textChars":5,"textLines":1,"bbox":[86.4,484.8,384,48]}
+{"kind":"notes","id":"nt/vaxsvy10","slide":15,"text":"[마무리 – 발표 시 강조 포인트]\n전체 발표를 한 문장으로 요약하면: '타일링을 없애 속도(646ms, 2.3배 개선)를 확보하고, 모듈형 구조로 유지보수성을 확보했으며, 실제로 30초 주기 폴링 서버가 지금 이 순간에도 가동 중'이라는 3가지입니다.\n질의응답에서 나올 수 있는 질문 대비: 'mIoU 0.770이 무슨 뜻이냐' → 10번 슬라이드, '왜 이렇게 느렸다가 빨라졌냐' → 6번 슬라이드, '진짜 돌아가고 있는 거 맞냐' → 4번·12번 슬라이드(PID 구동 확인)로 답변하시면 됩니다.\n"}
