@@ -2,6 +2,8 @@
 
 ![Portfolio Preview](./assets/preview.png)
 
+> **2026-09-29 연결 문서 추가:** 이 페이지는 기존 현장 네트워크 작업 기록입니다. 이후 AI·센서·웹 플랫폼 개발은 [탄천 통합 모니터링](../../tancheon-monitoring-portfolio/)과 [TOVNET-SEG](../../tovnet-seg-portfolio/)에서 확인할 수 있습니다. 아래 PPTX와 이미지는 이전 시점 자료입니다.
+
 ## 프로젝트 개요
 
 탄천물재생센터 6호기·9호기 구간의 CCTV, PTZ, 열화상 카메라 원격 모니터링 환경을 점검한 현장 네트워크 프로젝트입니다. 카메라와 공유기, 노트북을 직접 연결하고 Omada Cloud, ER605 게이트웨이, 포트포워딩, DHCP 환경을 확인하며 영상 접속 장애의 원인을 단계적으로 분리했습니다.

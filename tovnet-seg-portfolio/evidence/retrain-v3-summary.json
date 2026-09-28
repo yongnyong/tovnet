@@ -1,0 +1,62 @@
+{
+  "review_date": "2026-09-29",
+  "development_snapshot_date": "2026-09-28",
+  "evaluation": "recorded comparison of baseline and v3 candidate; not rerun for this publication",
+  "metric_note": "IoU_sludge is mean per-frame foreground IoU over frames with ground-truth foreground, not all-class mIoU",
+  "results": {
+    "old_test": {
+      "old": {
+        "n": 124,
+        "n_with_fg": 109,
+        "IoU_sludge": 0.4156,
+        "false_positive_pixel_pct": 2.406,
+        "frames_with_top_fp_pct": 71,
+        "mean_area_pct": 5.88
+      },
+      "new": {
+        "n": 124,
+        "n_with_fg": 109,
+        "IoU_sludge": 0.4817,
+        "false_positive_pixel_pct": 0.799,
+        "frames_with_top_fp_pct": 62.1,
+        "mean_area_pct": 4.94
+      }
+    },
+    "manual": {
+      "old": {
+        "n": 55,
+        "n_with_fg": 50,
+        "IoU_sludge": 0.5492,
+        "false_positive_pixel_pct": 0.695,
+        "frames_with_top_fp_pct": 78.2,
+        "mean_area_pct": 9.25
+      },
+      "new": {
+        "n": 55,
+        "n_with_fg": 50,
+        "IoU_sludge": 0.7338,
+        "false_positive_pixel_pct": 1.749,
+        "frames_with_top_fp_pct": 65.5,
+        "mean_area_pct": 13.09
+      }
+    },
+    "hn": {
+      "old": {
+        "n": 101,
+        "n_with_fg": 79,
+        "IoU_sludge": 0.1214,
+        "false_positive_pixel_pct": 0.582,
+        "frames_with_top_fp_pct": 64.4,
+        "mean_area_pct": 0.78
+      },
+      "new": {
+        "n": 101,
+        "n_with_fg": 79,
+        "IoU_sludge": 0.2872,
+        "false_positive_pixel_pct": 0.107,
+        "frames_with_top_fp_pct": 0,
+        "mean_area_pct": 0.42
+      }
+    }
+  }
+}
